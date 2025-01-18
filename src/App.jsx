@@ -5,9 +5,11 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <>
+    <div className='main'>
       <h1>Minä olen Puu</h1>
-      <a href="https://lippu.fi">Osta liput</a>
+      <div className='ticket-button'>
+        <a href="https://lippu.fi">Osta liput</a>
+      </div>
       <p>
         Alussa oli Suuri Sotka. Sotka sanoi, “nyt tulee muna!” ja muna tuli.
         Munasta kuoriutui maailma. Maailma oli kaunis, kunnes sen valtasi
@@ -29,8 +31,8 @@ function App() {
         <li>Lauantai 5.4. 13:00</li>
         <li>Maanantai 7.4. 19:00</li>
         <li>Tiistai 8.4. 19:00</li>
-        <a href="https://lippu.fi">Lippukauppaan</a>
       </ul>
+      <a href="https://lippu.fi">Lippukauppaan</a>
       <p>Esitys kestää noin ? h ja sisältää 20 min väliajan. </p>
       <p>Väliajalla yleisö voi ostaa pientä syötävää ja juotavaa kahviosta.</p>
       <p>
@@ -78,15 +80,15 @@ function App() {
         excursiolle osallistuu ja näytöspäivämäärä, niin varaamme teille
         tarvittavan määrän lippuja/paikkoja salista.
       </p>
-      <h2>Traileri</h2>
-      <a href="https://youtube.com">Youtube</a>
       <h2>Hahmot</h2>
       <p>Kuvat: Kuvaaja Kuvaajainen ?</p>
       <p>Editointi: Editoija Editoijanen ?</p>
+      <h2>Traileri</h2>
+      <a href="https://youtube.com">Youtube</a>
       <a href="https://instagram.com">Instagram</a>
       <p>Lisätiedot: kumpulanspeksi@gmail.com</p>
       <p>Sponsorien logot ?</p>
-    </>
+    </div>
   );
 }
 

@@ -1,1 +1,117 @@
+/*muuttujat*/
+:root {
+    --background: #fffae2;
+    --text: #004116
+}
 
+  .aref-ruqaa-regular {
+    font-family: "Aref Ruqaa", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .aref-ruqaa-bold {
+    font-family: "Aref Ruqaa", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+
+/* Yleinen asettelu */
+body {
+    font-family: "Aref Ruqaa", serif;
+    font-size: 100%;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    color: var(--text);
+  }
+  
+  /* Pääkontaineri */
+  .main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: var(--background);
+    border-radius: 8px;
+  }
+  
+  /* Otsikot */
+  h1 {
+    font-size: 2.5rem;
+    color: var(--text);
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    color: var(--text);
+    margin-top: 60px;
+  }
+  
+  /* Linkit */
+  a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Lista */
+  ul {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    list-style-type: square;
+    padding-left: 20px;
+  }
+  
+  ul li {
+    margin: 10px 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  
+  /* Taulukko */
+  table {
+    width: 60%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  table th, table td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: var(--background);
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  /* Kappaleet */
+  p {
+    margin: 20px 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  .ticket-button {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+  }
+  
+  /* Mediaelementit */
+  iframe, img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+  }
+  
