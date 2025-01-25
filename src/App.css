@@ -106,6 +106,18 @@ body {
     width: 50%;
     text-align: center;
   }
+
+  .koristeellinen-otsikko {
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+  }
+  
+  .koristeellinen-otsikko img {
+    width: 50px;
+    height: auto;
+    margin: 0;
+  }
   
   /* Mediaelementit */
   iframe, img {

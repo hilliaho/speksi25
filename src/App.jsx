@@ -1,96 +1,81 @@
 import "./App.css";
-import infoJson from '../info.json'
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import infoJson from "../info.json";
 import LanguageButton from "./components/LanguageButton";
-
-
+import mKirjain from "./assets/m-kirjain.svg";
 
 const App = () => {
-  const [info, setInfo] = useState(infoJson.fi)
-
-  const handleLanguageChange = (language) => {
-    if(language === 'fi') {
-        setInfo(infoJson.fi)
-    } else {
-        setInfo(infoJson.en)
-    }
-  }
+  const [language, setLanguage] = useState("fi");
+  const [info, setInfo] = useState(infoJson.fi);
 
   return (
-    <div className='main'>
-      <LanguageButton handler={handleLanguageChange}/>
-      <h1>Minä olen Puu</h1>
-      <div className='ticket-button'>
-        <a href="https://lippu.fi">Osta liput</a>
+    <div className="main">
+      <LanguageButton
+        language={language}
+        setLanguage={setLanguage}
+        setInfo={setInfo}
+      />
+      <div class="koristeellinen-otsikko">
+        <img src={mKirjain} alt="Koristeellinen T-kirjain" />
+        <p>inä olen puu</p>
       </div>
-      <p>
-        {info.synopsis}
-      </p>
-      <h2>Esitysajat</h2>
+      <h1>{info.produktionimi}</h1>
+      <div className="ticket-button">
+        <a href="https://lippu.fi">{info.ostaLiput}</a>
+      </div>
+      <p>{info.synopsis}</p>
+      <h2>{info.otsikkoEsitysajat}</h2>
       <ul>
         <li>{info.esitysajat[0]}</li>
         <li>{info.esitysajat[1]}</li>
         <li>{info.esitysajat[2]}</li>
         <li>{info.esitysajat[3]}</li>
       </ul>
-      <a href="https://lippu.fi">Lippukauppaan</a>
-      <p>Esitys kestää noin ? h ja sisältää 20 min väliajan. </p>
-      <p>Väliajalla yleisö voi ostaa pientä syötävää ja juotavaa kahviosta.</p>
-      <p>
-        Saavuthan esityspaikalle hyvissä ajoin. Ovet aukeavat tuntia? ennen
-        esityksen alkamisaikaa. Paikat täytetään vapaasti
-        saapumisjärjestyksessä. Narikka on ilmainen ja vartioimaton. Ethän jätä
-        arvotavaroita narikkaan. Kumpulan Speksi ry ei vastaa narikkaan
-        jätetyistä ja kadonneista tavaroista.
-      </p>
-      <p>
-        Osoite: Helsingin suomalainen yhteiskoulu (SYK)
-        <br />
-        Isonnevantie 8, 00320 Helsinki
-      </p>
-      <p>Esityssali ei valitettavasti ole esteetön.</p>
-      <h2>Lippujen hinnat</h2>
+      <a href="https://lippu.fi">{info.ostaLiput}</a>
+      <p>{info.kesto}</p>
+      <p>{info.valiaika}</p>
+      <p>{info.saapumisohjeet}</p>
+      <p>{info.esityspaikka}</p>
+      <p>{info.osoite}</p>
+      <p>{info.esteettomyys}</p>
+      <h2>{info.otsikkoLippujenHinnat}</h2>
       <table>
         <tr>
-          <th>Opiskelija</th>
-          <th>? €</th>
+          <th>{info.hinnat.opiskelija.rooli}</th>
+          <th>{info.hinnat.opiskelija.hinta}</th>
         </tr>
         <tr>
-          <th>Perus</th>
-          <th>? €</th>
+          <th>{info.hinnat.perus.rooli}</th>
+          <th>{info.hinnat.perus.hinta}</th>
         </tr>
         <tr>
-          <th>Kannatus</th>
-          <th>? €</th>
-        </tr>
-        <tr>
-          <th>Ryhmä (opiskelija)</th>
-          <th>? €</th>
-        </tr>
-        <tr>
-          <th>Ryhmä (perus)</th>
-          <th>? €</th>
+          <th>{info.hinnat.kannatus.rooli}</th>
+          <th>{info.hinnat.kannatus.hinta}</th>
         </tr>
       </table>
-      <p>
-        Emme lähtökohtaisesti palauta lippuostoksista rahoja, vaikka joutuisit
-        perumaan tulosi. Ongelmatilanteissa ota yhteyttä ?
-      </p>
-      <p>
-        Ryhmälippujen ostajat: Ilmoita meille sähköpostitse (?), montako henkeä
-        excursiolle osallistuu ja näytöspäivämäärä, niin varaamme teille
-        tarvittavan määrän lippuja/paikkoja salista.
-      </p>
-      <h2>Hahmot</h2>
-      <p>Kuvat: Kuvaaja Kuvaajainen ?</p>
-      <p>Editointi: Editoija Editoijanen ?</p>
-      <h2>Traileri</h2>
+      <p>{info.lippuohjeet}</p>
+      <h2>{info.otsikkoRyhmaliput}</h2>
+      <p>{info.ryhmalippuohjeet}</p>
+      <table>
+        <tr>
+          <th>{info.ryhmalippuhinnat.opiskelija.rooli}</th>
+          <th>{info.ryhmalippuhinnat.opiskelija.hinta}</th>
+        </tr>
+        <tr>
+          <th>{info.ryhmalippuhinnat.perus.rooli}</th>
+          <th>{info.ryhmalippuhinnat.perus.hinta}</th>
+        </tr>
+      </table>
+      <h2>{info.otsikkoHahmot}</h2>
+      <p>{info.kuvat}: Kuvaaja Kuvaajainen ?</p>
+      <p>{info.editointi}: Editoija Editoijanen ?</p>
+      <h2>{info.otsikkoTraileri}</h2>
       <a href="https://youtube.com">Youtube</a>
       <a href="https://instagram.com">Instagram</a>
-      <p>Lisätiedot: kumpulanspeksi@gmail.com</p>
+      <p>{info.lisatiedot}: kumpulanspeksi@gmail.com</p>
       <p>Sponsorien logot ?</p>
     </div>
   );
-}
+};
 
 export default App;

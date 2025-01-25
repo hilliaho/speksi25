@@ -1,27 +1,104 @@
-{   
-    "fi": {
-        "synopsis": "Alussa oli Suuri Sotka. Sotka sanoi, nyt tulee muna! ja muna tuli. Munasta kuoriutui maailma. Maailma oli kaunis, kunnes sen valtasi ahneus. Ahneus riitautti maailman kansat, ja Sotka oli pettynytluomuksiinsa. Täten hän pakeni Kokkelivuorille munimaan toisen munan, josta vielä jonain päivänä kuoriutuisi uusi, parempi maailma. Eräs kansa pakeni konfliktia taikakuvun alle, josta kukaan ei enää päässyt läpi. Tämän Kupulan asukkaat elivät rauhassa tuhansia vuosia, suojassa kuvun takaisilta Ulkopuolisilta. Muuan Puu ja Puska ovat kautta aikain seuranneet Kupulan Velhotornin rauhaisaa elämää, kunnes valtakunnassa alkaa tapahtumaan ennennäkemättömiä asioita; Suur-Velho muuttuu pupuksi ja taikakuvusta löytyy aukko. Voivatko rakkaat velhomme Simppa sekä Kataja pysäyttää apulaistensa kanssa Kupulaa uhkaavat voimat ja sammuttaa tämän herkästi syttyvän katastrofin kipinät?",
-        "esitysajat": [
-            "Torstai 3.4. klo 19:00 (Ensi-ilta)",
-            "Lauantai 5.4. 13:00",
-            "Maanantai 7.4. 19:00",
-            "Tiistai 8.4. 19:00"
-            ],
-        "esityksen kesto": "",
-        "väliaika": ""
-    },
-    "en": {
-        "synopsis": "Alussa oli Suuri Sotka. Sotka sanoi, nyt tulee muna! ja muna tuli. Munasta kuoriutui maailma. Maailma oli kaunis, kunnes sen valtasi ahneus. Ahneus riitautti maailman kansat, ja Sotka oli pettynytluomuksiinsa. Täten hän pakeni Kokkelivuorille munimaan toisen munan, josta vielä jonain päivänä kuoriutuisi uusi, parempi maailma. Eräs kansa pakeni konfliktia taikakuvun alle, josta kukaan ei enää päässyt läpi. Tämän Kupulan asukkaat elivät rauhassa tuhansia vuosia, suojassa kuvun takaisilta Ulkopuolisilta. Muuan Puu ja Puska ovat kautta aikain seuranneet Kupulan Velhotornin rauhaisaa elämää, kunnes valtakunnassa alkaa tapahtumaan ennennäkemättömiä asioita; Suur-Velho muuttuu pupuksi ja taikakuvusta löytyy aukko. Voivatko rakkaat velhomme Simppa sekä Kataja pysäyttää apulaistensa kanssa Kupulaa uhkaavat voimat ja sammuttaa tämän herkästi syttyvän katastrofin kipinät?",
-        "esitysajat": [
-            "Torstai 3.4. klo 19:00 (Ensi-ilta)",
-            "Lauantai 5.4. 13:00",
-            "Maanantai 7.4. 19:00",
-            "Tiistai 8.4. 19:00"
-            ],
-        "esityksen kesto": "",
-        "väliaika": ""
-    }
-
-
-
+{
+	"fi": {
+		"produktionimi": "Minä olen Puu",
+		"ostaLiput": "Osta liput",
+		"synopsis": "Alussa oli Suuri Sotka. Sotka sanoi, nyt tulee muna! ja muna tuli. Munasta kuoriutui maailma. Maailma oli kaunis, kunnes sen valtasi ahneus. Ahneus riitautti maailman kansat, ja Sotka oli pettynytluomuksiinsa. Täten hän pakeni Kokkelivuorille munimaan toisen munan, josta vielä jonain päivänä kuoriutuisi uusi, parempi maailma. Eräs kansa pakeni konfliktia taikakuvun alle, josta kukaan ei enää päässyt läpi. Tämän Kupulan asukkaat elivät rauhassa tuhansia vuosia, suojassa kuvun takaisilta Ulkopuolisilta. Muuan Puu ja Puska ovat kautta aikain seuranneet Kupulan Velhotornin rauhaisaa elämää, kunnes valtakunnassa alkaa tapahtumaan ennennäkemättömiä asioita; Suur-Velho muuttuu pupuksi ja taikakuvusta löytyy aukko. Voivatko rakkaat velhomme Simppa sekä Kataja pysäyttää apulaistensa kanssa Kupulaa uhkaavat voimat ja sammuttaa tämän herkästi syttyvän katastrofin kipinät?",
+		"otsikkoEsitysajat": "Esitysajat",
+		"esitysajat": [
+			"Torstai 3.4. klo 19:00 (Ensi-ilta)",
+			"Lauantai 5.4. 13:00",
+			"Maanantai 7.4. 19:00",
+			"Tiistai 8.4. 19:00"
+		],
+		"kesto": "Esitys kestää noin ? h ja sisältää 20 min väliajan.",
+		"valiaika": "Väliajalla yleisö voi ostaa pientä syötävää ja juotavaa kahviosta.",
+		"saapumisohjeet": "Saavuthan esityspaikalle hyvissä ajoin. Ovet aukeavat tuntia? ennen esityksen alkamisaikaa. Paikat täytetään vapaasti saapumisjärjestyksessä. Narikka on ilmainen ja vartioimaton. Ethän jätä arvotavaroita narikkaan. Kumpulan Speksi ry ei vastaa narikkaan jätetyistä ja kadonneista tavaroista.",
+		"esityspaikka": "Helsingin suomalainen yhteiskoulu (SYK)",
+		"osoite": "Isonnevantie 8, 00320 Helsinki",
+		"esteettomyys": "Esityssali ei valitettavasti ole esteetön.",
+		"otsikkoLippujenHinnat": "Liput",
+		"hinnat": {
+			"opiskelija": {
+				"rooli": "Opiskelija",
+				"hinta": "? €"
+			},
+			"perus": {
+				"rooli": "Perus",
+				"hinta": "? €"
+			},
+			"kannatus": {
+				"rooli": "Kannatus",
+				"hinta": "? €"
+			}
+		},
+		"lippuohjeet": "Emme lähtökohtaisesti palauta lippuostoksista rahoja, vaikka joutuisit perumaan tulosi. Ongelmatilanteissa ota yhteyttä ?",
+		"otsikkoRyhmaliput": "Ryhmäliput",
+		"ryhmalippuhinnat": {
+			"opiskelija": {
+				"rooli": "Ryhmälippu opiskelija",
+				"hinta": "? €"
+			},
+			"perus": {
+				"rooli": "Ryhmälippu perus",
+				"hinta": "? €"
+			}
+		},
+		"ryhmalippuohjeet": "Ryhmälippuja voi ostaa vähintään 10 hengen ryhmälle. Ilmoita meille sähköpostitse (?), montako henkeä excursiolle osallistuu ja näytöspäivämäärä, niin varaamme teille tarvittavan määrän lippuja/paikkoja salista.",
+		"otsikkoHahmot": "Hahmot",
+		"kuvat": "Kuvat",
+		"editointi": "Editointi",
+		"otsikkoTraileri": "Traileri",
+		"lisatiedot": "Lisätiedot"
+	},
+	"en": {
+		"produktionimi": "Minä olen Puu",
+		"ostaLiput": "Osta liput",
+		"synopsis": "Alussa oli Suuri Sotka. Sotka sanoi, nyt tulee muna! ja muna tuli. Munasta kuoriutui maailma. Maailma oli kaunis, kunnes sen valtasi ahneus. Ahneus riitautti maailman kansat, ja Sotka oli pettynytluomuksiinsa. Täten hän pakeni Kokkelivuorille munimaan toisen munan, josta vielä jonain päivänä kuoriutuisi uusi, parempi maailma. Eräs kansa pakeni konfliktia taikakuvun alle, josta kukaan ei enää päässyt läpi. Tämän Kupulan asukkaat elivät rauhassa tuhansia vuosia, suojassa kuvun takaisilta Ulkopuolisilta. Muuan Puu ja Puska ovat kautta aikain seuranneet Kupulan Velhotornin rauhaisaa elämää, kunnes valtakunnassa alkaa tapahtumaan ennennäkemättömiä asioita; Suur-Velho muuttuu pupuksi ja taikakuvusta löytyy aukko. Voivatko rakkaat velhomme Simppa sekä Kataja pysäyttää apulaistensa kanssa Kupulaa uhkaavat voimat ja sammuttaa tämän herkästi syttyvän katastrofin kipinät?",
+		"otsikkoEsitysajat": "Esitysajat",
+		"esitysajat": [
+			"Torstai 3.4. klo 19:00 (Ensi-ilta)",
+			"Lauantai 5.4. 13:00",
+			"Maanantai 7.4. 19:00",
+			"Tiistai 8.4. 19:00"
+		],
+		"kesto": "Esitys kestää noin ? h ja sisältää 20 min väliajan.",
+		"valiaika": "Väliajalla yleisö voi ostaa pientä syötävää ja juotavaa kahviosta.",
+		"saapumisohjeet": "Saavuthan esityspaikalle hyvissä ajoin. Ovet aukeavat tuntia? ennen esityksen alkamisaikaa. Paikat täytetään vapaasti saapumisjärjestyksessä. Narikka on ilmainen ja vartioimaton. Ethän jätä arvotavaroita narikkaan. Kumpulan Speksi ry ei vastaa narikkaan jätetyistä ja kadonneista tavaroista.",
+		"esityspaikka": "Helsingin suomalainen yhteiskoulu (SYK)",
+		"osoite": "Isonnevantie 8, 00320 Helsinki",
+		"esteettomyys": "Esityssali ei valitettavasti ole esteetön.",
+		"otsikkoLippujenHinnat": "Liput",
+		"hinnat": {
+			"opiskelija": {
+				"rooli": "Opiskelija",
+				"hinta": "? €"
+			},
+			"perus": {
+				"rooli": "Perus",
+				"hinta": "? €"
+			},
+			"kannatus": {
+				"rooli": "Kannatus",
+				"hinta": "? €"
+			}
+		},
+		"lippuohjeet": "Emme lähtökohtaisesti palauta lippuostoksista rahoja, vaikka joutuisit perumaan tulosi. Ongelmatilanteissa ota yhteyttä ?",
+		"otsikkoRyhmaliput": "Ryhmäliput",
+		"ryhmalippuhinnat": {
+			"opiskelija": {
+				"rooli": "Ryhmälippu opiskelija",
+				"hinta": "? €"
+			},
+			"perus": {
+				"rooli": "Ryhmälippu perus",
+				"hinta": "? €"
+			}
+		},
+		"ryhmalippuohjeet": "Ryhmälippuja voi ostaa vähintään 10 hengen ryhmälle. Ilmoita meille sähköpostitse (?), montako henkeä excursiolle osallistuu ja näytöspäivämäärä, niin varaamme teille tarvittavan määrän lippuja/paikkoja salista.",
+		"otsikkoHahmot": "Hahmot",
+		"kuvat": "Kuvat",
+		"editointi": "Editointi",
+		"otsikkoTraileri": "Traileri",
+		"lisatiedot": "Lisätiedot"
+	}
 }
