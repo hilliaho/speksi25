@@ -1,36 +1,37 @@
-import { useState } from "react";
 import "./App.css";
+import infoJson from '../info.json'
+import { useState } from "react";
+import LanguageButton from "./components/LanguageButton";
 
-function App() {
-  const [count, setCount] = useState(0);
+
+
+const App = () => {
+  const [info, setInfo] = useState(infoJson.fi)
+
+  const handleLanguageChange = (language) => {
+    if(language === 'fi') {
+        setInfo(infoJson.fi)
+    } else {
+        setInfo(infoJson.en)
+    }
+  }
 
   return (
     <div className='main'>
+      <LanguageButton handler={handleLanguageChange}/>
       <h1>Minä olen Puu</h1>
       <div className='ticket-button'>
         <a href="https://lippu.fi">Osta liput</a>
       </div>
       <p>
-        Alussa oli Suuri Sotka. Sotka sanoi, “nyt tulee muna!” ja muna tuli.
-        Munasta kuoriutui maailma. Maailma oli kaunis, kunnes sen valtasi
-        ahneus. Ahneus riitautti maailman kansat, ja Sotka oli pettynyt
-        luomuksiinsa. Täten hän pakeni Kokkelivuorille munimaan toisen munan,
-        josta vielä jonain päivänä kuoriutuisi uusi, parempi maailma. Eräs kansa
-        pakeni konfliktia taikakuvun alle, josta kukaan ei enää päässyt läpi.
-        Tämän Kupulan asukkaat elivät rauhassa tuhansia vuosia, suojassa kuvun
-        takaisilta Ulkopuolisilta. Muuan Puu ja Puska ovat kautta aikain
-        seuranneet Kupulan Velhotornin rauhaisaa elämää, kunnes valtakunnassa
-        alkaa tapahtumaan ennennäkemättömiä asioita; Suur-Velho muuttuu pupuksi
-        ja taikakuvusta löytyy aukko. Voivatko rakkaat velhomme Simppa sekä
-        Kataja pysäyttää apulaistensa kanssa Kupulaa uhkaavat voimat ja
-        sammuttaa tämän herkästi syttyvän katastrofin kipinät?
+        {info.synopsis}
       </p>
       <h2>Esitysajat</h2>
       <ul>
-        <li>Torstai 3.4. klo 19:00 (Ensi-ilta)</li>
-        <li>Lauantai 5.4. 13:00</li>
-        <li>Maanantai 7.4. 19:00</li>
-        <li>Tiistai 8.4. 19:00</li>
+        <li>{info.esitysajat[0]}</li>
+        <li>{info.esitysajat[1]}</li>
+        <li>{info.esitysajat[2]}</li>
+        <li>{info.esitysajat[3]}</li>
       </ul>
       <a href="https://lippu.fi">Lippukauppaan</a>
       <p>Esitys kestää noin ? h ja sisältää 20 min väliajan. </p>
