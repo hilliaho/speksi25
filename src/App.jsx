@@ -1,8 +1,9 @@
 import "./App.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import infoJson from "../info.json";
 import LanguageButton from "./components/LanguageButton";
 import mKirjain from "./assets/m-kirjain.svg";
+import tower from "./assets/web-graphics-tower.png"
 
 const App = () => {
   const [language, setLanguage] = useState("fi");
@@ -15,10 +16,11 @@ const App = () => {
         setLanguage={setLanguage}
         setInfo={setInfo}
       />
-      <div class="koristeellinen-otsikko">
+      <div className="koristeellinen-otsikko">
         <img src={mKirjain} alt="Koristeellinen T-kirjain" />
         <p>inä olen puu</p>
       </div>
+      <img src={tower} alt="velhotorni"/>
       <h1>{info.produktionimi}</h1>
       <div className="ticket-button">
         <a href="https://lippu.fi">{info.ostaLiput}</a>
