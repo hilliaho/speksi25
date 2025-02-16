@@ -12,7 +12,7 @@
 		],
 		"kesto": "Esitys kestää noin ? h ja sisältää 20 min väliajan.",
 		"valiaika": "Väliajalla yleisö voi ostaa pientä syötävää ja juotavaa kahviosta.",
-		"saapumisohjeet": "Saavuthan esityspaikalle hyvissä ajoin. Ovet aukeavat tuntia? ennen esityksen alkamisaikaa. Paikat täytetään vapaasti saapumisjärjestyksessä. Narikka on ilmainen ja vartioimaton. Ethän jätä arvotavaroita narikkaan. Kumpulan Speksi ry ei vastaa narikkaan jätetyistä ja kadonneista tavaroista.",
+		"saapumisohjeet": "Saavuthan esityspaikalle hyvissä ajoin. Ovet aukeavat tuntia ennen esityksen alkamisaikaa. Paikat täytetään vapaasti saapumisjärjestyksessä. Narikka on ilmainen ja vartioimaton. Ethän jätä arvotavaroita narikkaan. Kumpulan Speksi ry ei vastaa narikkaan jätetyistä ja kadonneista tavaroista.",
 		"esityspaikka": "Helsingin suomalainen yhteiskoulu (SYK)",
 		"osoite": "Isonnevantie 8, 00320 Helsinki",
 		"esteettomyys": "Esityssali ei valitettavasti ole esteetön.",
@@ -35,11 +35,11 @@
 		"otsikkoRyhmaliput": "Ryhmäliput",
 		"ryhmalippuhinnat": {
 			"opiskelija": {
-				"rooli": "Ryhmälippu opiskelija",
+				"rooli": "Opiskelija",
 				"hinta": "? €"
 			},
 			"perus": {
-				"rooli": "Ryhmälippu perus",
+				"rooli": "Perus",
 				"hinta": "? €"
 			}
 		},
@@ -63,7 +63,7 @@
 		],
 		"kesto": "Esitys kestää noin ? h ja sisältää 20 min väliajan.",
 		"valiaika": "Väliajalla yleisö voi ostaa pientä syötävää ja juotavaa kahviosta.",
-		"saapumisohjeet": "Saavuthan esityspaikalle hyvissä ajoin. Ovet aukeavat tuntia? ennen esityksen alkamisaikaa. Paikat täytetään vapaasti saapumisjärjestyksessä. Narikka on ilmainen ja vartioimaton. Ethän jätä arvotavaroita narikkaan. Kumpulan Speksi ry ei vastaa narikkaan jätetyistä ja kadonneista tavaroista.",
+		"saapumisohjeet": "Saavuthan esityspaikalle hyvissä ajoin. Ovet aukeavat tuntia ennen esityksen alkamisaikaa. Paikat täytetään vapaasti saapumisjärjestyksessä. Narikka on ilmainen ja vartioimaton. Ethän jätä arvotavaroita narikkaan. Kumpulan Speksi ry ei vastaa narikkaan jätetyistä ja kadonneista tavaroista.",
 		"esityspaikka": "Helsingin suomalainen yhteiskoulu (SYK)",
 		"osoite": "Isonnevantie 8, 00320 Helsinki",
 		"esteettomyys": "Esityssali ei valitettavasti ole esteetön.",
@@ -86,11 +86,11 @@
 		"otsikkoRyhmaliput": "Ryhmäliput",
 		"ryhmalippuhinnat": {
 			"opiskelija": {
-				"rooli": "Ryhmälippu opiskelija",
+				"rooli": "Opiskelija",
 				"hinta": "? €"
 			},
 			"perus": {
-				"rooli": "Ryhmälippu perus",
+				"rooli": "Perus",
 				"hinta": "? €"
 			}
 		},
