@@ -1,7 +1,6 @@
 /*muuttujat*/
 :root {
-    --background: #fffae2;
-    --text: #004116
+    --text: black
 }
 
   .aref-ruqaa-regular {
@@ -24,7 +23,22 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: var(--background);
+    background-image: 
+    url("./assets/border-pattern-design.png"),
+    url("./assets/border-pattern-design.png"),
+    url('./assets/web-graphics-parchment-background.PNG');
+    background-repeat: 
+    repeat-y,
+    repeat-y,
+    no-repeat; 
+  background-position: 
+    right top, 
+    left top, 
+    center; 
+  background-size: 
+    30px, 
+    30px,
+    cover;
     color: var(--text);
   }
   
@@ -32,9 +46,33 @@ body {
   .main {
     max-width: 800px;
     margin: 20px auto;
-    padding: 20px;
-    background: var(--background);
+    padding: 60px;
     border-radius: 8px;
+  }
+
+  /* Asettelu */
+
+  .right-container {
+    display: flex;
+    justify-content: right;
+    }
+
+  .content-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .content-column {
+    width: 60%;
+    padding: 5px;
+  }
+
+  .image-column {
+    width: 40%;
+    padding: 0px;
   }
   
   /* Otsikot */
@@ -101,6 +139,25 @@ body {
     font-weight: bold;
   }
 
+  /* Elementit */
+
+  .language-icon {
+    width: 18px;
+  }
+
+  .language-button {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: none;
+    border: none;
+  }
+
+  .language-button:hover {
+    text-decoration: underline;
+  }
+
   .ticket-button {
     margin: auto;
     width: 50%;
@@ -117,6 +174,12 @@ body {
     width: 50px;
     height: auto;
     margin: 0;
+  }
+
+  /* Kuvat */
+
+  .wand-image {
+    max-height: 300px;
   }
   
   /* Mediaelementit */
