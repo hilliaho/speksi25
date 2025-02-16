@@ -1,9 +1,10 @@
 import infoJson from "../../info.json";
+import languageIcon from "../assets/language.png";
 
 const LanguageButton = ({ language, setLanguage, setInfo }) => {
-  let buttonLabel = "In English";
+  let buttonLabel = "EN";
   if (language === "en") {
-    buttonLabel = "Suomeksi";
+    buttonLabel = "FI";
   }
 
   const handleLanguageChange = () => {
@@ -18,8 +19,14 @@ const LanguageButton = ({ language, setLanguage, setInfo }) => {
   };
 
   return (
-    <div>
-      <button onClick={() => handleLanguageChange()}>{buttonLabel}</button>
+    <div className="content-row">
+      <img className="language-icon" src={languageIcon} alt="language icon" />
+      <button
+        className="language-button"
+        onClick={() => handleLanguageChange()}
+      >
+        {buttonLabel}
+      </button>
     </div>
   );
 };
