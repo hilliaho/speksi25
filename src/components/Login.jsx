@@ -7,7 +7,7 @@ const Login = ({ setAuthored }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (password === "SalainenSalasanaSpeksinProduktionSivulle") {
+    if (password === "omenapupu") {
       setAuthored(true);
     } else {
       setError("väärä salasana :(");

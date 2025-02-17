@@ -8,7 +8,16 @@ import tree from "./assets/web-graphics-tree.png";
 import treeOpenEyes from "./assets/web-graphics-tree-with-eye.png";
 import hat from "./assets/web-graphics-wizard-hat.png";
 import wand from "./assets/web-graphics-wand.png";
-import eKirjain from "./assets/title-letters_E.svg"
+import cKirjain from "./assets/title-letters_C.svg";
+import eKirjain from "./assets/title-letters_E.svg";
+import gKirjain from "./assets/title-letters_G.svg";
+import hKirjain from "./assets/title-letters_H.svg";
+import lKirjain from "./assets/title-letters_L.svg";
+import rKirjain from "./assets/title-letters_R.svg";
+import sKirjain from "./assets/title-letters_S.svg";
+import tKirjain from "./assets/title-letters_T.svg";
+import headerImage from "./assets/website-header.png";
+import title from "./assets/title-v1.png";
 import DecoratedHeader from "./components/DecoratedHeader";
 
 const App = () => {
@@ -43,11 +52,15 @@ const App = () => {
                 setInfo={setInfo}
               />
             </div>
-            <h1>{info.produktionimi}</h1>
+            <img src={title} alt="Otsikko Minä olen Puu" />
+            <img
+              src={headerImage}
+              alt="kupulan kylä, jonka keskellä on velhotorni"
+            />
+            <p>{info.synopsis}</p>
             <div className="ticket-button">
               <a href="https://lippu.fi">{info.ostaLiput}</a>
             </div>
-            <p>{info.synopsis}</p>
             <div className="content-row">
               <div className="image-column">
                 <img
@@ -58,7 +71,10 @@ const App = () => {
                 />
               </div>
               <div className="content-column">
-                <DecoratedHeader firstLetter={eKirjain} headerText={"sitysajat"}/>
+                <DecoratedHeader
+                  firstLetter={eKirjain}
+                  headerText={"sitysajat"}
+                />
                 <ul>
                   <li>{info.esitysajat[0]}</li>
                   <li>{info.esitysajat[1]}</li>
@@ -83,7 +99,7 @@ const App = () => {
             <p>{info.esteettomyys}</p>
             <div className="content-row">
               <div className="content-column">
-                <h2>{info.otsikkoLippujenHinnat}</h2>
+                <DecoratedHeader firstLetter={lKirjain} headerText={"iput"} />
                 <table>
                   <tr>
                     <th>{info.hinnat.opiskelija.rooli}</th>
@@ -109,7 +125,10 @@ const App = () => {
                 <img className="wand-image" src={wand} alt="taikasauva" />
               </div>
               <div className="content-column">
-                <h2>{info.otsikkoRyhmaliput}</h2>
+                <DecoratedHeader
+                  firstLetter={rKirjain}
+                  headerText={"yhmäliput"}
+                />
                 <table>
                   <tr>
                     <th>{info.ryhmalippuhinnat.opiskelija.rooli}</th>
@@ -123,10 +142,10 @@ const App = () => {
               </div>
             </div>
             <p>{info.ryhmalippuohjeet}</p>
-            <h2>{info.otsikkoHahmot}</h2>
+            <DecoratedHeader firstLetter={hKirjain} headerText={"ahmot"} />
             <p>{info.kuvat}: Kuvaaja Kuvaajainen ?</p>
             <p>{info.editointi}: Editoija Editoijanen ?</p>
-            <h2>{info.otsikkoTraileri}</h2>
+            <DecoratedHeader firstLetter={tKirjain} headerText={"raileri"} />
             <a href="https://youtube.com">Youtube</a>
             <a href="https://instagram.com">Instagram</a>
             <p>{info.lisatiedot}: kumpulanspeksi@gmail.com</p>
