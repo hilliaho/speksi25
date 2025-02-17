@@ -164,16 +164,20 @@ body {
     text-align: center;
   }
 
-  .koristeellinen-otsikko {
+  .decorated-header {
     display: flex;
-    align-items: center;
     gap: 0.1rem;
   }
   
-  .koristeellinen-otsikko img {
-    width: 50px;
+  .decorated-header img {
+    width: 60px;
     height: auto;
     margin: 0;
+  }
+
+  .decorated-header-text {
+    font-size: 2.3rem;
+    font-weight: bold;
   }
 
   /* Kuvat */
