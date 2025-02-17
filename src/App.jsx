@@ -8,6 +8,8 @@ import tree from "./assets/web-graphics-tree.png";
 import treeOpenEyes from "./assets/web-graphics-tree-with-eye.png";
 import hat from "./assets/web-graphics-wizard-hat.png";
 import wand from "./assets/web-graphics-wand.png";
+import eKirjain from "./assets/title-letters_E.svg"
+import DecoratedHeader from "./components/DecoratedHeader";
 
 const App = () => {
   const [language, setLanguage] = useState("fi");
@@ -41,7 +43,6 @@ const App = () => {
                 setInfo={setInfo}
               />
             </div>
-            <img src={tower} alt="velhotorni" />
             <h1>{info.produktionimi}</h1>
             <div className="ticket-button">
               <a href="https://lippu.fi">{info.ostaLiput}</a>
@@ -57,7 +58,7 @@ const App = () => {
                 />
               </div>
               <div className="content-column">
-                <h2>{info.otsikkoEsitysajat}</h2>
+                <DecoratedHeader firstLetter={eKirjain} headerText={"sitysajat"}/>
                 <ul>
                   <li>{info.esitysajat[0]}</li>
                   <li>{info.esitysajat[1]}</li>
