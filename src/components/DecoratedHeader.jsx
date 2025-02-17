@@ -1,10 +1,9 @@
-import mKirjain from "../assets/m-kirjain.svg";
-
-const DecoratedHeader = () => {
+// eslint-disable-next-line react/prop-types
+const DecoratedHeader = ({firstLetter, headerText}) => {
   return (
-    <div className="koristeellinen-otsikko">
-      <img src={mKirjain} alt="Koristeellinen M-kirjain" />
-      <p>inä olen puu</p>
+    <div className="decorated-header">
+      <img src={firstLetter} alt="Koristeellinen E-kirjain" />
+      <span className="decorated-header-text">{headerText}</span>
     </div>
   );
 };
