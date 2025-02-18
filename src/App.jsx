@@ -19,6 +19,7 @@ import tKirjain from "./assets/title-letters_T.svg";
 import headerImage from "./assets/website-header.png";
 import title from "./assets/title-v1.png";
 import DecoratedHeader from "./components/DecoratedHeader";
+import TicketsButton from "./components/TicketsButton";
 
 const App = () => {
   const [language, setLanguage] = useState("fi");
@@ -60,9 +61,9 @@ const App = () => {
             />
           </div>
           <div className="main">
-            <p>{info.synopsis}</p>
+            <p className="synopsis">{info.synopsis}</p>
             <div className="ticket-button">
-              <a href="https://lippu.fi">{info.ostaLiput}</a>
+              <TicketsButton info={info} />
             </div>
             <div className="content-row">
               <div className="image-column">
@@ -86,7 +87,6 @@ const App = () => {
                 </ul>
               </div>
             </div>
-            <a href="https://lippu.fi">{info.ostaLiput}</a>
             <p>{info.kesto}</p>
             <p>{info.valiaika}</p>
             <div className="content-row">
@@ -122,7 +122,8 @@ const App = () => {
                 <img src={hat} alt="velhohattu" />
               </div>
             </div>
-            <p>{info.lippuohjeet}</p>
+            <TicketsButton info={info} />
+            <p className="instruction-paragraph">{info.lippuohjeet}</p>
             <div className="content-row">
               <div className="image-column">
                 <img className="wand-image" src={wand} alt="taikasauva" />
@@ -144,7 +145,7 @@ const App = () => {
                 </table>
               </div>
             </div>
-            <p>{info.ryhmalippuohjeet}</p>
+            <p className="instruction-paragraph">{info.ryhmalippuohjeet}</p>
             <DecoratedHeader firstLetter={hKirjain} headerText={"ahmot"} />
             <p>{info.kuvat}: Kuvaaja Kuvaajainen ?</p>
             <p>{info.editointi}: Editoija Editoijanen ?</p>

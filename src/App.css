@@ -47,7 +47,6 @@ body {
     max-width: 1000px;
     margin: 20px auto;
     padding: 80px;
-    border-radius: 8px;
   }
 
   /* Asettelu */
@@ -67,8 +66,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 5.0rem;
+    margin-bottom: 0;
   }
 
   .content-column {
@@ -140,7 +139,7 @@ body {
   
   /* Kappaleet */
   p {
-    margin: 20px 0;
+    margin: 1.0rem 0;
     font-size: 1.25rem;
     font-weight: bold;
   }
@@ -164,10 +163,24 @@ body {
     text-decoration: underline;
   }
 
-  .ticket-button {
-    margin: auto;
-    width: 50%;
-    text-align: center;
+  .tickets-button {
+    display: flex;
+    padding: 0.5rem 0.8rem;
+    background-color: none;
+    color:black;
+    text-decoration: none;
+    margin: 0;
+    width: 8.0rem;
+    font-size: 1.4rem;
+    border: 0.18rem solid black;
+    border-color: black;
+    justify-content: center;
+  }
+
+  .tickets-button:hover {
+    text-decoration: none;
+    font-size: 1.46rem;
+    width: 8.3rem;
   }
 
   .decorated-header {
@@ -184,6 +197,15 @@ body {
   .decorated-header-text {
     font-size: 2.3rem;
     font-weight: bold;
+  }
+
+  .synopsis {
+    margin-top: 6.0rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .instruction-paragraph {
+    margin: 4.0rem 0;
   }
 
   /* Kuvat */
