@@ -44,7 +44,7 @@ const App = () => {
       {authored && (
         <div>
           <div className="side-pattern"></div>
-          <div className="main">
+          <div className="title-container">
             <div className="right-container">
               <LanguageButton
                 language={language}
@@ -54,9 +54,12 @@ const App = () => {
             </div>
             <img src={title} alt="Otsikko Minä olen Puu" />
             <img
+              className="header-image"
               src={headerImage}
               alt="kupulan kylä, jonka keskellä on velhotorni"
             />
+          </div>
+          <div className="main">
             <p>{info.synopsis}</p>
             <div className="ticket-button">
               <a href="https://lippu.fi">{info.ostaLiput}</a>

@@ -32,37 +32,43 @@ body {
     repeat-y,
     no-repeat; 
   background-position: 
-    right top, 
-    left top, 
+    calc(100% - 20px) top, 
+    calc(0% + 20px) top,
     center; 
   background-size: 
-    30px, 
-    30px,
+    60px, 
+    60px,
     cover;
     color: var(--text);
   }
   
   /* Pääkontaineri */
   .main {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 20px auto;
-    padding: 60px;
+    padding: 80px;
     border-radius: 8px;
   }
 
   /* Asettelu */
 
+  .title-container {
+    margin: auto;
+    max-width: 1400px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
   .right-container {
     display: flex;
-    justify-content: right;
     }
 
   .content-row {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
 
   .content-column {
@@ -181,6 +187,10 @@ body {
   }
 
   /* Kuvat */
+
+  .header-image {
+    margin-top: -30%;
+  }
 
   .wand-image {
     max-height: 300px;
