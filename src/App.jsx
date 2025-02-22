@@ -25,6 +25,7 @@ import loimu from "./assets/loimu.png"
 import punanaamio from "./assets/punanaamio.png"
 import tek from "./assets/tek.png"
 import nuta from "./assets/nuta.jpg"
+import speksi from "./assets/kumpulanspeksi_logo.png"
 
 const App = () => {
   const [language, setLanguage] = useState("fi");
@@ -178,8 +179,19 @@ const App = () => {
             <p>{info.editointi}</p>
             <DecoratedHeader firstLetter={tKirjain} headerText={info.otsikkoTraileri} />
             <a href="https://youtube.com">Youtube</a>
-            <a href="https://instagram.com">Instagram</a>
             <p>{info.lisatiedot}</p>
+            <div className="content-row">
+              <div className="content-column">
+              <img src={speksi} alt="Kumpulan Speksi logo" />
+              </div>
+              <div className="content-column">
+              <a href="https://kumpulanspeksi.fi/jarjesto/">Speksin nettisivut</a>
+              <p></p>
+              <a href="https://instagram.com">Instagram</a>
+              <p></p>
+              <a href="https://www.tiktok.com/@kumpulanspeksi">TikTok</a>
+              </div>
+            </div>
             <div className="logo-row">
               <img className="logo-image" src={tek} alt="TEK logo" />
               <img className="logo-image" src={loimu} alt="Loimu logo" />
