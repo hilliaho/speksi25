@@ -8,23 +8,28 @@ import tree from "./assets/web-graphics-tree.png";
 import treeOpenEyes from "./assets/web-graphics-tree-with-eye.png";
 import hat from "./assets/web-graphics-wizard-hat.png";
 import wand from "./assets/web-graphics-wand.png";
-import cKirjain from "./assets/title-letters_C.svg";
-import eKirjain from "./assets/title-letters_E.svg";
-import gKirjain from "./assets/title-letters_G.svg";
-import hKirjain from "./assets/title-letters_H.svg";
-import lKirjain from "./assets/title-letters_L.svg";
-import rKirjain from "./assets/title-letters_R.svg";
-import sKirjain from "./assets/title-letters_S.svg";
-import tKirjain from "./assets/title-letters_T.svg";
+import cKirjain from "./assets/title-letters-light-bg_C.svg";
+import eKirjain from "./assets/title-letters-light-bg_E.svg";
+import gKirjain from "./assets/title-letters-light-bg_G.svg";
+import hKirjain from "./assets/title-letters-light-bg_H.svg";
+import lKirjain from "./assets/title-letters-light-bg_L.svg";
+import rKirjain from "./assets/title-letters-light-bg_R.svg";
+import sKirjain from "./assets/title-letters-light-bg_S.svg";
+import tKirjain from "./assets/title-letters-light-bg_T.svg";
 import headerImage from "./assets/website-header.png";
 import title from "./assets/title-v1.png";
 import DecoratedHeader from "./components/DecoratedHeader";
 import TicketsButton from "./components/TicketsButton";
+import unisport from "./assets/unisport.png"
+import loimu from "./assets/loimu.png"
+import punanaamio from "./assets/punanaamio.png"
+import tek from "./assets/tek.png"
+import nuta from "./assets/nuta.jpg"
 
 const App = () => {
   const [language, setLanguage] = useState("fi");
   const [info, setInfo] = useState(infoJson.fi);
-  const [authored, setAuthored] = useState(false);
+  const [authored, setAuthored] = useState(true);
   const [treeImage, setTreeImage] = useState(tree);
 
   useEffect(() => {
@@ -75,10 +80,14 @@ const App = () => {
                 />
               </div>
               <div className="content-column">
-                <DecoratedHeader
+                {language === "fi" && (<DecoratedHeader
                   firstLetter={eKirjain}
-                  headerText={"sitysajat"}
-                />
+                  headerText={info.otsikkoEsitysajat}
+                />)}
+                {language === "en" && (<DecoratedHeader
+                  firstLetter={sKirjain}
+                  headerText={info.otsikkoEsitysajat}
+                />)}
                 <ul>
                   <li>{info.esitysajat[0]}</li>
                   <li>{info.esitysajat[1]}</li>
@@ -102,11 +111,18 @@ const App = () => {
             <p>{info.esteettomyys}</p>
             <div className="content-row">
               <div className="content-column">
-                <DecoratedHeader firstLetter={lKirjain} headerText={"iput"} />
+                {language === "fi" && (<DecoratedHeader
+                  firstLetter={lKirjain}
+                  headerText={info.otsikkoLippujenHinnat}
+                />)}
+                {language === "en" && (<DecoratedHeader
+                  firstLetter={tKirjain}
+                  headerText={info.otsikkoLippujenHinnat}
+                />)}
                 <table>
                   <tr>
-                    <th>{info.hinnat.opiskelija.rooli}</th>
-                    <th>{info.hinnat.opiskelija.hinta}</th>
+                    <th>{info.hinnat.alennus.rooli}</th>
+                    <th>{info.hinnat.alennus.hinta}</th>
                   </tr>
                   <tr>
                     <th>{info.hinnat.perus.rooli}</th>
@@ -129,14 +145,18 @@ const App = () => {
                 <img className="wand-image" src={wand} alt="taikasauva" />
               </div>
               <div className="content-column">
-                <DecoratedHeader
+                {language === "fi" && (<DecoratedHeader
                   firstLetter={rKirjain}
-                  headerText={"yhmäliput"}
-                />
+                  headerText={info.otsikkoRyhmaliput}
+                />)}
+                {language === "en" && (<DecoratedHeader
+                  firstLetter={gKirjain}
+                  headerText={info.otsikkoRyhmaliput}
+                />)}
                 <table>
                   <tr>
-                    <th>{info.ryhmalippuhinnat.opiskelija.rooli}</th>
-                    <th>{info.ryhmalippuhinnat.opiskelija.hinta}</th>
+                    <th>{info.ryhmalippuhinnat.alennus.rooli}</th>
+                    <th>{info.ryhmalippuhinnat.alennus.hinta}</th>
                   </tr>
                   <tr>
                     <th>{info.ryhmalippuhinnat.perus.rooli}</th>
@@ -146,14 +166,27 @@ const App = () => {
               </div>
             </div>
             <p className="instruction-paragraph">{info.ryhmalippuohjeet}</p>
-            <DecoratedHeader firstLetter={hKirjain} headerText={"ahmot"} />
-            <p>{info.kuvat}: Kuvaaja Kuvaajainen ?</p>
-            <p>{info.editointi}: Editoija Editoijanen ?</p>
-            <DecoratedHeader firstLetter={tKirjain} headerText={"raileri"} />
+            {language === "fi" && (<DecoratedHeader
+                  firstLetter={hKirjain}
+                  headerText={info.otsikkoHahmot}
+                />)}
+                {language === "en" && (<DecoratedHeader
+                  firstLetter={cKirjain}
+                  headerText={info.otsikkoHahmot}
+                />)}
+            <p>{info.kuvat}</p>
+            <p>{info.editointi}</p>
+            <DecoratedHeader firstLetter={tKirjain} headerText={info.otsikkoTraileri} />
             <a href="https://youtube.com">Youtube</a>
             <a href="https://instagram.com">Instagram</a>
-            <p>{info.lisatiedot}: kumpulanspeksi@gmail.com</p>
-            <p>Sponsorien logot ?</p>
+            <p>{info.lisatiedot}</p>
+            <div className="logo-row">
+              <img className="logo-image" src={tek} alt="TEK logo" />
+              <img className="logo-image" src={loimu} alt="Loimu logo" />
+              <img className="logo-image" src={unisport} alt="Unisport logo" />
+              <img className="logo-image" src={punanaamio} alt="Punanaamio logo" />
+              <img className="logo-image" src={nuta} alt="Arabian nuorisotalo logo" />
+            </div>
           </div>
         </div>
       )}
