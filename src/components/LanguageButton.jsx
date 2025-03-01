@@ -19,7 +19,7 @@ const LanguageButton = ({ language, setLanguage, setInfo }) => {
   };
 
   return (
-    <div className="content-row">
+    <div className="language-button-row">
       <img className="language-icon" src={languageIcon} alt="language icon" />
       <button
         className="language-button"

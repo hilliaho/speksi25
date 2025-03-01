@@ -34,21 +34,30 @@ body {
 /* Pääkontaineri */
 .main {
   max-width: 1000px;
-  margin: 20px auto;
-  padding: 80px;
+  margin: 0 auto;
+  padding: 0px;
 }
 
 /* Asettelu */
 
 .title-container {
-  margin: auto;
+  margin: 0 auto;
   padding-left: 0px;
   padding-right: 0px;
 }
 
-.right-container {
+.language-button-container {
+  margin-top: 0;
   margin-left: 100px;
   display: flex;
+}
+
+.language-button-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 0;
 }
 
 .content-row {
@@ -122,7 +131,7 @@ ul li {
 
 /* Taulukko */
 table {
-  width: 60%;
+  width: 50%;
   border-collapse: collapse;
   margin: 20px 0;
 }
@@ -247,7 +256,8 @@ img {
 
 @media (max-width: 768px) {
   .main {
-    max-width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
     padding: 20px;
   }
 
@@ -269,6 +279,15 @@ img {
   .logo-row {
     flex-direction: column;
     align-items: center;
+    margin-top: 4rem;
+  }
+
+  .content-column {
+    width: 100%;
+  }
+
+  .image-column {
+    width: 100%;
   }
 
   .logo-image {
@@ -285,10 +304,10 @@ img {
 
   body {
     background-size: 20px, 20px, cover;
+    background-position: calc(100% - 5px) top, calc(0% + 5px) top, center;
   }
 
   .tickets-button {
-    width: 100%;
     font-size: 1.2rem;
   }
 
@@ -306,7 +325,7 @@ img {
 
   table th,
   table td {
-    font-size: 1rem;
+    font-size: 1.4rem;
     padding: 8px;
   }
 }

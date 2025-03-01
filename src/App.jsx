@@ -52,7 +52,7 @@ const App = () => {
         <div>
           <div className="side-pattern"></div>
           <div className="title-container">
-            <div className="right-container">
+            <div className="language-button-container">
               <LanguageButton
                 language={language}
                 setLanguage={setLanguage}
