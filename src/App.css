@@ -53,12 +53,12 @@ body {
 
   .title-container {
     margin: auto;
-    max-width: 1400px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .right-container {
+    margin-left: 100px;
     display: flex;
     }
 
