@@ -1,241 +1,231 @@
 /*muuttujat*/
 :root {
-    --text: black
+  --text: black;
 }
 
-  .aref-ruqaa-regular {
-    font-family: "Aref Ruqaa", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .aref-ruqaa-bold {
-    font-family: "Aref Ruqaa", serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
+.aref-ruqaa-regular {
+  font-family: "Aref Ruqaa", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.aref-ruqaa-bold {
+  font-family: "Aref Ruqaa", serif;
+  font-weight: 700;
+  font-style: normal;
+}
 
 /* Yleinen asettelu */
 body {
-    font-family: "Aref Ruqaa", serif;
-    font-size: 100%;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-image: 
+  font-family: "Aref Ruqaa", serif;
+  font-size: 100%;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-image: url("./assets/border-pattern-design.png"),
     url("./assets/border-pattern-design.png"),
-    url("./assets/border-pattern-design.png"),
-    url('./assets/web-graphics-parchment-background.PNG');
-    background-repeat: 
-    repeat-y,
-    repeat-y,
-    no-repeat; 
-  background-position: 
-    calc(100% - 20px) top, 
-    calc(0% + 20px) top,
-    center; 
-  background-size: 
-    60px, 
-    60px,
-    cover;
-    color: var(--text);
-  }
-  
-  /* Pääkontaineri */
-  .main {
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 80px;
-  }
+    url("./assets/web-graphics-parchment-background.PNG");
+  background-repeat: repeat-y, repeat-y, no-repeat;
+  background-position: calc(100% - 20px) top, calc(0% + 20px) top, center;
+  background-size: 40px, 40px, cover;
+  color: var(--text);
+}
 
-  /* Asettelu */
+/* Pääkontaineri */
+.main {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 80px;
+}
 
-  .title-container {
-    margin: auto;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
+/* Asettelu */
 
-  .right-container {
-    margin-left: 100px;
-    display: flex;
-    }
+.title-container {
+  margin: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+}
 
-  .content-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5.0rem;
-    margin-bottom: 0;
-  }
+.right-container {
+  margin-left: 100px;
+  display: flex;
+}
 
-  .content-column {
-    width: 60%;
-    padding: 5px;
-  }
+.content-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 0;
+}
 
-  .image-column {
-    width: 40%;
-    padding: 0px;
-  }
+.content-column {
+  width: 60%;
+  padding: 5px;
+}
 
-  .logo-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15.0rem;
-    margin-bottom: 0;
-  }
+.image-column {
+  width: 40%;
+  padding: 0px;
+}
 
-  .logo-image {
-    width: 19%;
-    padding: 1%;
-  }
-  
-  /* Otsikot */
-  h1 {
-    font-size: 2.5rem;
-    color: var(--text);
-    text-align: center;
-  }
-  
-  h2 {
-    font-size: 1.8rem;
-    color: var(--text);
-    margin-top: 60px;
-  }
-  
-  /* Linkit */
-  a {
-    color: var(--text);
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Lista */
-  ul {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    list-style-type: square;
-    padding-left: 20px;
-  }
-  
-  ul li {
-    margin: 10px 0;
-    font-size: 1.4rem;
-    font-weight: bold;
-  }
-  
-  /* Taulukko */
-  table {
-    width: 60%;
-    border-collapse: collapse;
-    margin: 20px 0;
-  }
-  
-  table th, table td {
-    padding: 10px;
-    text-align: left;
-  }
-  
-  table th {
-    background-color: var(--background);
-    font-weight: bold;
-    font-size: 1.5rem;
-  }
-  
-  /* Kappaleet */
-  p {
-    margin: 1.0rem 0;
-    font-size: 1.25rem;
-    font-weight: bold;
-  }
+.logo-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15rem;
+  margin-bottom: 0;
+}
 
-  /* Elementit */
+.logo-image {
+  width: 19%;
+  padding: 1%;
+}
 
-  .language-icon {
-    width: 18px;
-  }
+/* Otsikot */
+h1 {
+  font-size: 2.5rem;
+  color: var(--text);
+  text-align: center;
+}
 
-  .language-button {
-    color: var(--text);
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: bold;
-    background: none;
-    border: none;
-  }
+h2 {
+  font-size: 1.8rem;
+  color: var(--text);
+  margin-top: 60px;
+}
 
-  .language-button:hover {
-    text-decoration: underline;
-  }
+/* Linkit */
+a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
 
-  .tickets-button {
-    display: flex;
-    padding: 0.5rem 0.8rem;
-    background-color: none;
-    color:black;
-    text-decoration: none;
-    margin: 0;
-    width: 8.0rem;
-    font-size: 1.4rem;
-    border: 0.18rem solid black;
-    border-color: black;
-    justify-content: center;
-  }
+a:hover {
+  text-decoration: underline;
+}
 
-  .tickets-button:hover {
-    text-decoration: none;
-    font-size: 1.46rem;
-    width: 8.3rem;
-  }
+/* Lista */
+ul {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  list-style-type: square;
+  padding-left: 20px;
+}
 
-  .decorated-header {
-    display: flex;
-    gap: 0.1rem;
-  }
-  
-  .decorated-header img {
-    width: 60px;
-    height: auto;
-    margin: 0;
-  }
+ul li {
+  margin: 10px 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
 
-  .decorated-header-text {
-    font-size: 2.3rem;
-    font-weight: bold;
-  }
+/* Taulukko */
+table {
+  width: 60%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
 
-  .synopsis {
-    margin-top: 6.0rem;
-    margin-bottom: 2.4rem;
-  }
+table th,
+table td {
+  padding: 10px;
+  text-align: left;
+}
 
-  .instruction-paragraph {
-    margin: 4.0rem 0;
-  }
+table th {
+  background-color: var(--background);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
 
-  /* Kuvat */
+/* Kappaleet */
+p {
+  margin: 1rem 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
 
-  .header-image {
-    margin-top: -30%;
-  }
+/* Elementit */
 
-  .wand-image {
-    max-height: 300px;
-  }
-  
-  /* Mediaelementit */
-  iframe, img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 10px auto;
-  }
-  
+.language-icon {
+  width: 18px;
+}
+
+.language-button {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: none;
+  border: none;
+}
+
+.language-button:hover {
+  text-decoration: underline;
+}
+
+.tickets-button {
+  display: flex;
+  padding: 0.5rem 0.8rem;
+  background-color: none;
+  color: black;
+  text-decoration: none;
+  margin: 0;
+  width: 8rem;
+  font-size: 1.4rem;
+  border: 0.18rem solid black;
+  border-color: black;
+  justify-content: center;
+}
+
+.tickets-button:hover {
+  text-decoration: none;
+  color: #06578e;
+  border-color: #06578e;
+}
+
+.decorated-header {
+  display: flex;
+  gap: 0.1rem;
+}
+
+.decorated-header img {
+  width: 60px;
+  height: auto;
+  margin: 0;
+}
+
+.decorated-header-text {
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+.synopsis {
+  margin-top: 6rem;
+  margin-bottom: 2.4rem;
+}
+
+.instruction-paragraph {
+  margin: 4rem 0;
+}
+
+/* Kuvat */
+
+.header-image {
+  margin-top: -30%;
+}
+
+.wand-image {
+  max-height: 300px;
+}
+
+/* Mediaelementit */
+iframe,
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}

@@ -17,15 +17,15 @@ import rKirjain from "./assets/title-letters-light-bg_R.svg";
 import sKirjain from "./assets/title-letters-light-bg_S.svg";
 import tKirjain from "./assets/title-letters-light-bg_T.svg";
 import headerImage from "./assets/website-header.png";
-import title from "./assets/title-v1.png";
+import title from "./assets/title.png";
 import DecoratedHeader from "./components/DecoratedHeader";
 import TicketsButton from "./components/TicketsButton";
-import unisport from "./assets/unisport.png"
-import loimu from "./assets/loimu.png"
-import punanaamio from "./assets/punanaamio.png"
-import tek from "./assets/tek.png"
-import nuta from "./assets/nuta.jpg"
-import speksi from "./assets/kumpulanspeksi_logo.png"
+import unisport from "./assets/unisport.png";
+import loimu from "./assets/loimu.png";
+import punanaamio from "./assets/punanaamio.png";
+import tek from "./assets/tek.png";
+import nuta from "./assets/nuta.jpg";
+import speksi from "./assets/kumpulanspeksi_logo.png";
 
 const App = () => {
   const [language, setLanguage] = useState("fi");
@@ -81,14 +81,18 @@ const App = () => {
                 />
               </div>
               <div className="content-column">
-                {language === "fi" && (<DecoratedHeader
-                  firstLetter={eKirjain}
-                  headerText={info.otsikkoEsitysajat}
-                />)}
-                {language === "en" && (<DecoratedHeader
-                  firstLetter={sKirjain}
-                  headerText={info.otsikkoEsitysajat}
-                />)}
+                {language === "fi" && (
+                  <DecoratedHeader
+                    firstLetter={eKirjain}
+                    headerText={info.otsikkoEsitysajat}
+                  />
+                )}
+                {language === "en" && (
+                  <DecoratedHeader
+                    firstLetter={sKirjain}
+                    headerText={info.otsikkoEsitysajat}
+                  />
+                )}
                 <ul>
                   <li>{info.esitysajat[0]}</li>
                   <li>{info.esitysajat[1]}</li>
@@ -112,14 +116,18 @@ const App = () => {
             <p>{info.esteettomyys}</p>
             <div className="content-row">
               <div className="content-column">
-                {language === "fi" && (<DecoratedHeader
-                  firstLetter={lKirjain}
-                  headerText={info.otsikkoLippujenHinnat}
-                />)}
-                {language === "en" && (<DecoratedHeader
-                  firstLetter={tKirjain}
-                  headerText={info.otsikkoLippujenHinnat}
-                />)}
+                {language === "fi" && (
+                  <DecoratedHeader
+                    firstLetter={lKirjain}
+                    headerText={info.otsikkoLippujenHinnat}
+                  />
+                )}
+                {language === "en" && (
+                  <DecoratedHeader
+                    firstLetter={tKirjain}
+                    headerText={info.otsikkoLippujenHinnat}
+                  />
+                )}
                 <table>
                   <tr>
                     <th>{info.hinnat.alennus.rooli}</th>
@@ -146,14 +154,18 @@ const App = () => {
                 <img className="wand-image" src={wand} alt="taikasauva" />
               </div>
               <div className="content-column">
-                {language === "fi" && (<DecoratedHeader
-                  firstLetter={rKirjain}
-                  headerText={info.otsikkoRyhmaliput}
-                />)}
-                {language === "en" && (<DecoratedHeader
-                  firstLetter={gKirjain}
-                  headerText={info.otsikkoRyhmaliput}
-                />)}
+                {language === "fi" && (
+                  <DecoratedHeader
+                    firstLetter={rKirjain}
+                    headerText={info.otsikkoRyhmaliput}
+                  />
+                )}
+                {language === "en" && (
+                  <DecoratedHeader
+                    firstLetter={gKirjain}
+                    headerText={info.otsikkoRyhmaliput}
+                  />
+                )}
                 <table>
                   <tr>
                     <th>{info.ryhmalippuhinnat.alennus.rooli}</th>
@@ -167,37 +179,54 @@ const App = () => {
               </div>
             </div>
             <p className="instruction-paragraph">{info.ryhmalippuohjeet}</p>
-            {language === "fi" && (<DecoratedHeader
-                  firstLetter={hKirjain}
-                  headerText={info.otsikkoHahmot}
-                />)}
-                {language === "en" && (<DecoratedHeader
-                  firstLetter={cKirjain}
-                  headerText={info.otsikkoHahmot}
-                />)}
+            {language === "fi" && (
+              <DecoratedHeader
+                firstLetter={hKirjain}
+                headerText={info.otsikkoHahmot}
+              />
+            )}
+            {language === "en" && (
+              <DecoratedHeader
+                firstLetter={cKirjain}
+                headerText={info.otsikkoHahmot}
+              />
+            )}
             <p>{info.kuvat}</p>
             <p>{info.editointi}</p>
-            <DecoratedHeader firstLetter={tKirjain} headerText={info.otsikkoTraileri} />
+            <DecoratedHeader
+              firstLetter={tKirjain}
+              headerText={info.otsikkoTraileri}
+            />
             <a href="https://youtube.com">Youtube</a>
             <p>{info.lisatiedot}</p>
             <div className="content-row">
               <div className="content-column">
-              <img src={speksi} alt="Kumpulan Speksi logo" />
+                <img src={speksi} alt="Kumpulan Speksi logo" />
               </div>
               <div className="content-column">
-              <a href="https://kumpulanspeksi.fi/jarjesto/">Speksin nettisivut</a>
-              <p></p>
-              <a href="https://instagram.com">Instagram</a>
-              <p></p>
-              <a href="https://www.tiktok.com/@kumpulanspeksi">TikTok</a>
+                <a href="https://kumpulanspeksi.fi/jarjesto/">
+                  Speksin nettisivut
+                </a>
+                <p></p>
+                <a href="https://instagram.com">Instagram</a>
+                <p></p>
+                <a href="https://www.tiktok.com/@kumpulanspeksi">TikTok</a>
               </div>
             </div>
             <div className="logo-row">
               <img className="logo-image" src={tek} alt="TEK logo" />
               <img className="logo-image" src={loimu} alt="Loimu logo" />
               <img className="logo-image" src={unisport} alt="Unisport logo" />
-              <img className="logo-image" src={punanaamio} alt="Punanaamio logo" />
-              <img className="logo-image" src={nuta} alt="Arabian nuorisotalo logo" />
+              <img
+                className="logo-image"
+                src={punanaamio}
+                alt="Punanaamio logo"
+              />
+              <img
+                className="logo-image"
+                src={nuta}
+                alt="Arabian nuorisotalo logo"
+              />
             </div>
           </div>
         </div>
