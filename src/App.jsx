@@ -179,6 +179,7 @@ const App = () => {
               </div>
             </div>
             <p className="instruction-paragraph">{info.ryhmalippuohjeet}</p>
+            {/*
             {language === "fi" && (
               <DecoratedHeader
                 firstLetter={hKirjain}
@@ -198,19 +199,29 @@ const App = () => {
               headerText={info.otsikkoTraileri}
             />
             <a href="https://youtube.com">Youtube</a>
+            */}
             <p>{info.lisatiedot}</p>
-            <div className="content-row">
-              <div className="content-column">
-                <img src={speksi} alt="Kumpulan Speksi logo" />
-              </div>
-              <div className="content-column">
-                <a href="https://kumpulanspeksi.fi/jarjesto/">
-                  Speksin nettisivut
-                </a>
-                <p></p>
-                <a href="https://instagram.com">Instagram</a>
-                <p></p>
-                <a href="https://www.tiktok.com/@kumpulanspeksi">TikTok</a>
+            <div className="follow">
+              <div className="content-row">
+                <div className="content-column">
+                  <img
+                    className="speksi-logo"
+                    src={speksi}
+                    alt="Kumpulan Speksi logo"
+                  />
+                </div>
+                <div className="content-column">
+                  <h2>SEURAA MEITÄ</h2>
+                  <a href="https://www.instagram.com/kumpulanspeksi/">
+                    Instagram: @kumpulanspeksi
+                  </a>
+                  <a href="https://www.tiktok.com/@kumpulanspeksi">
+                    TikTok: @kumpulanspeksi
+                  </a>
+                  <a href="https://kumpulanspeksi.fi/jarjesto/">
+                    Speksin nettisivut
+                  </a>
+                </div>
               </div>
             </div>
             <div className="logo-row">
