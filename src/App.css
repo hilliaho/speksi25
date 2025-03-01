@@ -244,3 +244,69 @@ img {
   display: block;
   margin: 10px auto;
 }
+
+@media (max-width: 768px) {
+  .main {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p,
+  a,
+  ul li {
+    font-size: 1.2rem;
+  }
+
+  .content-row,
+  .logo-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-image {
+    width: 50%;
+  }
+
+  .speksi-logo {
+    max-height: 10rem;
+  }
+
+  .wand-image {
+    max-height: 200px;
+  }
+
+  body {
+    background-size: 20px, 20px, cover;
+  }
+
+  .tickets-button {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .follow {
+    margin-top: 5rem;
+  }
+
+  .follow a {
+    font-size: 1.4rem;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  table th,
+  table td {
+    font-size: 1rem;
+    padding: 8px;
+  }
+}
