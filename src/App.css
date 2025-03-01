@@ -55,7 +55,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
+  margin-top: 6rem;
   margin-bottom: 0;
 }
 
@@ -100,7 +100,6 @@ a {
   color: var(--text);
   text-decoration: none;
   font-size: 1.2rem;
-  font-weight: bold;
 }
 
 a:hover {
@@ -143,7 +142,7 @@ table th {
 /* Kappaleet */
 p {
   margin: 1rem 0;
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   font-weight: bold;
 }
 
@@ -219,6 +218,22 @@ p {
 
 .wand-image {
   max-height: 300px;
+}
+
+.speksi-logo {
+  margin-top: 4rem;
+  max-height: 15rem;
+}
+
+.follow {
+  margin-top: 14rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.follow a {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.6rem;
 }
 
 /* Mediaelementit */
