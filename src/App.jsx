@@ -69,7 +69,7 @@ const App = () => {
           <div className="main">
             <p className="synopsis">{info.synopsis}</p>
             <div className="ticket-button">
-              <TicketsButton info={info} />
+              <TicketsButton language={language} />
             </div>
             <div className="content-row">
               <div className="image-column">
@@ -147,7 +147,7 @@ const App = () => {
                 <img src={hat} alt="velhohattu" />
               </div>
             </div>
-            <TicketsButton info={info} />
+            <TicketsButton language={language} />
             <p className="instruction-paragraph">{info.lippuohjeet}</p>
             <div className="content-row">
               <div className="image-column">
@@ -211,7 +211,7 @@ const App = () => {
                   />
                 </div>
                 <div className="content-column">
-                  <h2>SEURAA MEITÄ</h2>
+                  <h2>{info.seuraaOtsikko}</h2>
                   <a href="https://www.instagram.com/kumpulanspeksi/">
                     Instagram: @kumpulanspeksi
                   </a>
