@@ -26,7 +26,7 @@ body {
     url("./assets/border-pattern-design.png"),
     url("./assets/web-graphics-parchment-background.PNG");
   background-repeat: repeat-y, repeat-y, no-repeat;
-  background-position: calc(100% - 20px) top, calc(0% + 20px) top, center;
+  background-position: calc(100% - 14px) top, calc(0% + 14px) top, center;
   background-size: 40px, 40px, cover;
   color: var(--text);
 }
@@ -35,15 +35,15 @@ body {
 .main {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0px;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 /* Asettelu */
 
 .title-container {
   margin: 0 auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 0;
 }
 
 .language-button-container {
@@ -64,7 +64,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 6rem;
+  margin-top: 8rem;
   margin-bottom: 0;
 }
 
@@ -173,6 +173,14 @@ p {
   text-decoration: underline;
 }
 
+.header-text {
+  width: 92%;
+}
+
+.header-image-mobile {
+  display: none;
+}
+
 .tickets-button-fi {
   width: 18rem;
 }
@@ -227,7 +235,7 @@ p {
 /* Kuvat */
 
 .header-image {
-  margin-top: -30%;
+  margin-top: -15%;
 }
 
 .wand-image {
@@ -264,6 +272,14 @@ img {
     margin-left: 20px;
     margin-right: 20px;
     padding: 20px;
+  }
+
+  .header-image {
+    display: none;
+  }
+
+  .header-image-mobile {
+    display: block;
   }
 
   h1 {
