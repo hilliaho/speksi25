@@ -17,7 +17,6 @@ import rKirjain from "./assets/title-letters-light-bg_R.svg";
 import sKirjain from "./assets/title-letters-light-bg_S.svg";
 import tKirjain from "./assets/title-letters-light-bg_T.svg";
 import headerImage from "./assets/Dome.webp";
-import headerImageMobile from "./assets/Dome.webp";
 import title from "./assets/title.webp";
 import DecoratedHeader from "./components/DecoratedHeader";
 import TicketsButton from "./components/TicketsButton";
