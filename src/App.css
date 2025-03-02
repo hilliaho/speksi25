@@ -16,6 +16,12 @@
 }
 
 /* Yleinen asettelu */
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Aref Ruqaa", serif;
   font-size: 100%;
@@ -66,6 +72,14 @@ body {
   align-items: center;
   margin-top: 8rem;
   margin-bottom: 0;
+}
+
+.content-row-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
 }
 
 .content-column {
@@ -177,8 +191,8 @@ p {
   width: 92%;
 }
 
-.header-image-mobile {
-  display: none;
+.language-info {
+  color: rgb(184, 8, 49);
 }
 
 .tickets-button-fi {
@@ -197,13 +211,13 @@ p {
   font-weight: bold;
   border: 0.2rem solid black;
   border-color: black;
-  background-color: rgba(177,116,194,0.7);
+  background-color: rgba(177, 116, 194, 0.7);
   justify-content: center;
 }
 
 .tickets-button-en:hover {
   text-decoration: none;
-  background-color: rgba(177,116,194,0.9);
+  background-color: rgba(177, 116, 194, 0.9);
 }
 
 .decorated-header {
@@ -230,6 +244,16 @@ p {
 
 .instruction-paragraph {
   margin: 4rem 0;
+}
+
+.address {
+  margin-top: 6rem;
+}
+
+.address-line {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
 /* Kuvat */
@@ -274,12 +298,8 @@ img {
     padding: 20px;
   }
 
-  .header-image {
-    display: none;
-  }
-
-  .header-image-mobile {
-    display: block;
+  .synopsis {
+    margin-top: 2rem;
   }
 
   h1 {
@@ -290,6 +310,10 @@ img {
     font-size: 1.5rem;
   }
 
+  .decorated-header-text {
+    font-size: 2rem;
+  }
+
   p,
   a,
   ul li {
@@ -297,10 +321,15 @@ img {
   }
 
   .content-row,
+  .content-row-2,
   .logo-row {
     flex-direction: column;
     align-items: center;
     margin-top: 4rem;
+  }
+
+  .language-button-container {
+    margin-left: 40px;
   }
 
   .content-column {
@@ -328,8 +357,10 @@ img {
     background-position: calc(100% - 5px) top, calc(0% + 5px) top, center;
   }
 
-  .tickets-button {
-    font-size: 1.2rem;
+  .tickets-button-en {
+    margin: auto;
+    width: 80%;
+    font-size: 1rem;
   }
 
   .follow {
@@ -348,5 +379,13 @@ img {
   table td {
     font-size: 1.4rem;
     padding: 8px;
+  }
+
+  .address {
+    margin-top: 3rem;
+  }
+
+  .address-line {
+    font-size: 1.5rem;
   }
 }
