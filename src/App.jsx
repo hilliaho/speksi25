@@ -16,9 +16,9 @@ import lKirjain from "./assets/title-letters-light-bg_L.svg";
 import rKirjain from "./assets/title-letters-light-bg_R.svg";
 import sKirjain from "./assets/title-letters-light-bg_S.svg";
 import tKirjain from "./assets/title-letters-light-bg_T.svg";
-import headerImage from "./assets/Dome.png";
-import headerImageMobile from "./assets/Dome-small.png";
-import title from "./assets/title.png";
+import headerImage from "./assets/Dome.webp";
+import headerImageMobile from "./assets/Dome.webp";
+import title from "./assets/title.webp";
 import DecoratedHeader from "./components/DecoratedHeader";
 import TicketsButton from "./components/TicketsButton";
 import unisport from "./assets/unisport.png";
@@ -45,7 +45,7 @@ const App = () => {
   return (
     <div>
       {!authored && (
-        <div>
+        <div className="login">
           <Login setAuthored={setAuthored} />
         </div>
       )}
@@ -60,20 +60,25 @@ const App = () => {
                 setInfo={setInfo}
               />
             </div>
-            <img className="header-text" src={title} alt="Otsikko Minä olen Puu" />
+            <img
+              className="header-text"
+              src={title}
+              alt="Otsikko Minä olen Puu"
+            />
             <img
               className="header-image"
               src={headerImage}
               alt="kupulan kylä, jonka keskellä on velhotorni"
             />
-            <img
-              className="header-image-mobile"
-              src={headerImageMobile}
-              alt="kupulan kylä, jonka keskellä on velhotorni"
-            />
           </div>
           <div className="main">
-            <p className="synopsis">{info.synopsis}</p>
+            <div className="synopsis">
+              <p>{info.synopsis[0]}</p>
+              <p>{info.synopsis[1]}</p>
+              <p>{info.synopsis[2]}</p>
+              <p>{info.synopsis[3]}</p>
+            </div>
+            <p className="language-info">{info.kielitieto}</p>
             <div className="ticket-button">
               <TicketsButton language={language} />
             </div>
@@ -109,7 +114,11 @@ const App = () => {
             </div>
             <p>{info.kesto}</p>
             <p>{info.valiaika}</p>
-            <div className="content-row">
+            <div className="address">
+              <span className="address-line">{info.esityspaikka}</span>
+              <span className="address-line">{info.osoite}</span>
+            </div>
+            <div className="content-row-2">
               <div className="content-column">
                 <p>{info.saapumisohjeet}</p>
               </div>
@@ -117,8 +126,6 @@ const App = () => {
                 <img src={tower} alt="velhotorni" />
               </div>
             </div>
-            <p>{info.esityspaikka}</p>
-            <p>{info.osoite}</p>
             <p>{info.esteettomyys}</p>
             <div className="content-row">
               <div className="content-column">
@@ -225,7 +232,7 @@ const App = () => {
                     TikTok: @kumpulanspeksi
                   </a>
                   <a href="https://kumpulanspeksi.fi/jarjesto/">
-                    Speksin nettisivut
+                    {info.nettisivut}
                   </a>
                 </div>
               </div>
