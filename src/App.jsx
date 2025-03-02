@@ -16,7 +16,8 @@ import lKirjain from "./assets/title-letters-light-bg_L.svg";
 import rKirjain from "./assets/title-letters-light-bg_R.svg";
 import sKirjain from "./assets/title-letters-light-bg_S.svg";
 import tKirjain from "./assets/title-letters-light-bg_T.svg";
-import headerImage from "./assets/website-header.png";
+import headerImage from "./assets/Dome.png";
+import headerImageMobile from "./assets/Dome-small.png";
 import title from "./assets/title.png";
 import DecoratedHeader from "./components/DecoratedHeader";
 import TicketsButton from "./components/TicketsButton";
@@ -59,10 +60,15 @@ const App = () => {
                 setInfo={setInfo}
               />
             </div>
-            <img src={title} alt="Otsikko Minä olen Puu" />
+            <img className="header-text" src={title} alt="Otsikko Minä olen Puu" />
             <img
               className="header-image"
               src={headerImage}
+              alt="kupulan kylä, jonka keskellä on velhotorni"
+            />
+            <img
+              className="header-image-mobile"
+              src={headerImageMobile}
               alt="kupulan kylä, jonka keskellä on velhotorni"
             />
           </div>
