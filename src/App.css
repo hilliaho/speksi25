@@ -30,7 +30,7 @@ body {
   padding: 0;
   background-image: url("./assets/border-pattern-design.png"),
     url("./assets/border-pattern-design.png"),
-    url("./assets/web-graphics-parchment-background.PNG");
+    url("./assets/web-graphics-parchment-background.webp");
   background-repeat: repeat-y, repeat-y, no-repeat;
   background-position: calc(100% - 14px) top, calc(0% + 14px) top, center;
   background-size: 40px, 40px, cover;
@@ -282,6 +282,11 @@ p {
   font-size: 1.7rem;
 }
 
+.follow p {
+  font-weight: normal;
+  font-size: 1.7rem;
+}
+
 /* Mediaelementit */
 iframe,
 img {
@@ -368,6 +373,10 @@ img {
   }
 
   .follow a {
+    font-size: 1.4rem;
+  }
+
+  .follow p {
     font-size: 1.4rem;
   }
 
