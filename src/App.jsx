@@ -3,11 +3,11 @@ import { useState, useEffect } from "react";
 import infoJson from "../info.json";
 import LanguageButton from "./components/LanguageButton";
 import Login from "./components/Login";
-import tower from "./assets/web-graphics-tower.png";
-import tree from "./assets/web-graphics-tree.png";
-import treeOpenEyes from "./assets/web-graphics-tree-with-eye.png";
-import hat from "./assets/web-graphics-wizard-hat.png";
-import wand from "./assets/web-graphics-wand.png";
+import tower from "./assets/web-graphics-tower.webp";
+import tree from "./assets/web-graphics-tree.webp";
+import treeOpenEyes from "./assets/web-graphics-tree-with-eye.webp";
+import hat from "./assets/web-graphics-wizard-hat.webp";
+import wand from "./assets/web-graphics-wand.webp";
 import cKirjain from "./assets/title-letters-light-bg_C.svg";
 import eKirjain from "./assets/title-letters-light-bg_E.svg";
 import gKirjain from "./assets/title-letters-light-bg_G.svg";
@@ -125,6 +125,7 @@ const App = () => {
                 <img src={tower} alt="velhotorni" />
               </div>
             </div>
+            <h2>{info.otsikkoEsteettomyys}</h2>
             <p>{info.esteettomyys}</p>
             <div className="content-row">
               <div className="content-column">
@@ -212,7 +213,6 @@ const App = () => {
             />
             <a href="https://youtube.com">Youtube</a>
             */}
-            <p>{info.lisatiedot}</p>
             <div className="follow">
               <div className="content-row">
                 <div className="content-column">
@@ -233,6 +233,7 @@ const App = () => {
                   <a href="https://kumpulanspeksi.fi/jarjesto/">
                     {info.nettisivut}
                   </a>
+                  <p>{info.lisatiedot}</p>
                 </div>
               </div>
             </div>
