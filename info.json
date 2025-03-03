@@ -13,15 +13,16 @@
 		"otsikkoEsitysajat": "Esitysajat",
 		"esitysajat": [
 			"Torstai 3.4. klo 19:00 (Ensi-ilta)",
-			"Lauantai 5.4. 13:30",
-			"Maanantai 7.4. 18:30",
-			"Tiistai 8.4. 18:30"
+			"Lauantai 5.4. klo 13:30",
+			"Maanantai 7.4. klo 18:30",
+			"Tiistai 8.4. klo 18:30"
 		],
 		"kesto": "Esitys kestää noin 3 h ja sisältää 20 min väliajan.",
 		"valiaika": "Väliajalla yleisö voi ostaa pientä syötävää ja juotavaa. Myymme myös haalarimerkkejä ja tarroja.",
 		"saapumisohjeet": "Saavuthan esityspaikalle hyvissä ajoin. Ovet aukeavat tuntia ennen esityksen alkamisaikaa. Paikat täytetään vapaasti saapumisjärjestyksessä. Narikka on ilmainen ja vartioimaton. Ethän jätä arvotavaroita narikkaan. Kumpulan Speksi ry ei vastaa narikkaan jätetyistä ja kadonneista tavaroista.",
 		"esityspaikka": "Helsingin suomalainen yhteiskoulu (SYK)",
 		"osoite": "Isonnevantie 8, 00320 Helsinki",
+		"otsikkoEsteettomyys": "Esteettömyys",
 		"esteettomyys": "Juhlasaliin on esteetön pääsy sivuovien kautta ja siellä on kaksi pyörätuolipaikkaa. Esitys sisältää kirkkaita ja välkkyviä valoja sekä kovia ääniä. Tarkempia esteettömyystietoja voit kysyä osoitteesta kumpulanspeksiliput@gmail.com.",
 		"otsikkoLippujenHinnat": "Liput",
 		"hinnat": {
@@ -82,6 +83,7 @@
 		"saapumisohjeet": "Please arrive on time. Doors will open an hour before the performance begins and seats will be filled in order of arrival. The cloakroom is free of charge but will not be guarded. Please do not leave valuables in the cloakroom. Kumpulan Speksi ry is not responsible for items left in the cloakroom.",
 		"esityspaikka": "Helsingin suomalainen yhteiskoulu (SYK)",
 		"osoite": "Isonnevantie 8, 00320 Helsinki",
+		"otsikkoEsteettomyys": "Accessibility",
 		"esteettomyys": "The venue is accessible through the side doors and includes two wheelchair accessible seats. The performance includes bright and flashing lights, and loud sounds. You can ask for more detailed accessibility information at kumpulanspeksiliput@gmail.com.",
 		"otsikkoLippujenHinnat": "Tickets",
 		"hinnat": {
