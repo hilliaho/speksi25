@@ -63,6 +63,7 @@ const App = () => {
           <p>{info.synopsis[1]}</p>
           <p>{info.synopsis[2]}</p>
           <p>{info.synopsis[3]}</p>
+          <p>{info.synopsis[4]}</p>
         </div>
         <p className="language-info">{info.kielitieto}</p>
         <div className="ticket-button">
