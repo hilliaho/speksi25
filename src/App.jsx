@@ -7,10 +7,10 @@ import tree from "./assets/web-graphics-tree.webp";
 import treeOpenEyes from "./assets/web-graphics-tree-with-eye.webp";
 import hat from "./assets/web-graphics-wizard-hat.webp";
 import wand from "./assets/web-graphics-wand.webp";
-import cKirjain from "./assets/title-letters-light-bg_C.svg";
+/*import cKirjain from "./assets/title-letters-light-bg_C.svg";*/
 import eKirjain from "./assets/title-letters-light-bg_E.svg";
 import gKirjain from "./assets/title-letters-light-bg_G.svg";
-import hKirjain from "./assets/title-letters-light-bg_H.svg";
+/*import hKirjain from "./assets/title-letters-light-bg_H.svg";*/
 import lKirjain from "./assets/title-letters-light-bg_L.svg";
 import rKirjain from "./assets/title-letters-light-bg_R.svg";
 import sKirjain from "./assets/title-letters-light-bg_S.svg";
@@ -25,11 +25,13 @@ import punanaamio from "./assets/punanaamio.png";
 import tek from "./assets/tek.png";
 import nuta from "./assets/nuta.jpg";
 import speksi from "./assets/kumpulanspeksi_logo.png";
+import GamePage from "./components/GamePage";
 
 const App = () => {
   const [language, setLanguage] = useState("fi");
   const [info, setInfo] = useState(infoJson.fi);
   const [treeImage, setTreeImage] = useState(tree);
+  const [page, setPage] = useState('info')
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -39,147 +41,148 @@ const App = () => {
     return () => clearInterval(interval);
   });
 
-  return (
-    <div>
-      <div className="side-pattern"></div>
-      <div className="title-container">
-        <div className="language-button-container">
-          <LanguageButton
-            language={language}
-            setLanguage={setLanguage}
-            setInfo={setInfo}
-          />
-        </div>
-        <img className="header-text" src={title} alt="Otsikko Minä olen Puu" />
-        <img
-          className="header-image"
-          src={headerImage}
-          alt="kupulan kylä, jonka keskellä on velhotorni"
-        />
-      </div>
-      <div className="main">
-        <div className="synopsis">
-          <p>{info.synopsis[0]}</p>
-          <p>{info.synopsis[1]}</p>
-          <p>{info.synopsis[2]}</p>
-          <p>{info.synopsis[3]}</p>
-        </div>
-        <p className="language-info">{info.kielitieto}</p>
-        <div className="ticket-button">
-          <TicketsButton language={language} />
-        </div>
-        <div className="content-row">
-          <div className="image-column">
-            <img
-              src={treeImage}
-              alt="puu"
-              onMouseOver={() => setTreeImage(treeOpenEyes)}
-              onMouseOut={() => setTreeImage(tree)}
+  if (page === 'info') {
+    return (
+      <div>
+        <div className="side-pattern"></div>
+        <div className="title-container">
+          <div className="language-button-container">
+            <LanguageButton
+              language={language}
+              setLanguage={setLanguage}
+              setInfo={setInfo}
             />
           </div>
-          <div className="content-column">
-            {language === "fi" && (
-              <DecoratedHeader
-                firstLetter={eKirjain}
-                headerText={info.otsikkoEsitysajat}
-              />
-            )}
-            {language === "en" && (
-              <DecoratedHeader
-                firstLetter={sKirjain}
-                headerText={info.otsikkoEsitysajat}
-              />
-            )}
-            <ul>
-              <li>{info.esitysajat[0]}</li>
-              <li>{info.esitysajat[1]}</li>
-              <li>{info.esitysajat[2]}</li>
-              <li>{info.esitysajat[3]}</li>
-            </ul>
-          </div>
+          <img className="header-text" src={title} alt="Otsikko Minä olen Puu" />
+          <img
+            className="header-image"
+            src={headerImage}
+            alt="kupulan kylä, jonka keskellä on velhotorni"
+          />
         </div>
-        <p>{info.kesto}</p>
-        <p>{info.valiaika}</p>
-        <div className="address">
-          <span className="address-line">{info.esityspaikka}</span>
-          <span className="address-line">{info.osoite}</span>
-        </div>
-        <div className="content-row-2">
-          <div className="content-column">
-            <p>{info.saapumisohjeet}</p>
+        <div className="main">
+          <div className="synopsis">
+            <p>{info.synopsis[0]}</p>
+            <p>{info.synopsis[1]}</p>
+            <p>{info.synopsis[2]}</p>
+            <p>{info.synopsis[3]}</p>
           </div>
-          <div className="image-column">
-            <img src={tower} alt="velhotorni" />
+          <p className="language-info">{info.kielitieto}</p>
+          <div className="ticket-button">
+            <TicketsButton language={language} />
           </div>
-        </div>
-        <h2>{info.otsikkoEsteettomyys}</h2>
-        <p>{info.esteettomyys}</p>
-        <div className="content-row">
-          <div className="content-column">
-            {language === "fi" && (
-              <DecoratedHeader
-                firstLetter={lKirjain}
-                headerText={info.otsikkoLippujenHinnat}
+          <div className="content-row">
+            <div className="image-column">
+              <img
+                src={treeImage}
+                alt="puu"
+                onMouseOver={() => setTreeImage(treeOpenEyes)}
+                onMouseOut={() => setTreeImage(tree)}
               />
-            )}
-            {language === "en" && (
-              <DecoratedHeader
-                firstLetter={tKirjain}
-                headerText={info.otsikkoLippujenHinnat}
-              />
-            )}
-            <table>
-              <tr>
-                <th>{info.hinnat.alennus.rooli}</th>
-                <th>{info.hinnat.alennus.hinta}</th>
-              </tr>
-              <tr>
-                <th>{info.hinnat.perus.rooli}</th>
-                <th>{info.hinnat.perus.hinta}</th>
-              </tr>
-              <tr>
-                <th>{info.hinnat.kannatus.rooli}</th>
-                <th>{info.hinnat.kannatus.hinta}</th>
-              </tr>
-            </table>
+            </div>
+            <div className="content-column">
+              {language === "fi" && (
+                <DecoratedHeader
+                  firstLetter={eKirjain}
+                  headerText={info.otsikkoEsitysajat}
+                />
+              )}
+              {language === "en" && (
+                <DecoratedHeader
+                  firstLetter={sKirjain}
+                  headerText={info.otsikkoEsitysajat}
+                />
+              )}
+              <ul>
+                <li>{info.esitysajat[0]}</li>
+                <li>{info.esitysajat[1]}</li>
+                <li>{info.esitysajat[2]}</li>
+                <li>{info.esitysajat[3]}</li>
+              </ul>
+            </div>
           </div>
-          <div className="image-column">
-            <img src={hat} alt="velhohattu" />
+          <p>{info.kesto}</p>
+          <p>{info.valiaika}</p>
+          <div className="address">
+            <span className="address-line">{info.esityspaikka}</span>
+            <span className="address-line">{info.osoite}</span>
           </div>
-        </div>
-        <TicketsButton language={language} />
-        <p className="instruction-paragraph">{info.lippuohjeet}</p>
-        <div className="content-row">
-          <div className="image-column">
-            <img className="wand-image" src={wand} alt="taikasauva" />
+          <div className="content-row-2">
+            <div className="content-column">
+              <p>{info.saapumisohjeet}</p>
+            </div>
+            <div className="image-column">
+              <img src={tower} alt="velhotorni" />
+            </div>
           </div>
-          <div className="content-column">
-            {language === "fi" && (
-              <DecoratedHeader
-                firstLetter={rKirjain}
-                headerText={info.otsikkoRyhmaliput}
-              />
-            )}
-            {language === "en" && (
-              <DecoratedHeader
-                firstLetter={gKirjain}
-                headerText={info.otsikkoRyhmaliput}
-              />
-            )}
-            <table>
-              <tr>
-                <th>{info.ryhmalippuhinnat.alennus.rooli}</th>
-                <th>{info.ryhmalippuhinnat.alennus.hinta}</th>
-              </tr>
-              <tr>
-                <th>{info.ryhmalippuhinnat.perus.rooli}</th>
-                <th>{info.ryhmalippuhinnat.perus.hinta}</th>
-              </tr>
-            </table>
+          <h2>{info.otsikkoEsteettomyys}</h2>
+          <p>{info.esteettomyys}</p>
+          <div className="content-row">
+            <div className="content-column">
+              {language === "fi" && (
+                <DecoratedHeader
+                  firstLetter={lKirjain}
+                  headerText={info.otsikkoLippujenHinnat}
+                />
+              )}
+              {language === "en" && (
+                <DecoratedHeader
+                  firstLetter={tKirjain}
+                  headerText={info.otsikkoLippujenHinnat}
+                />
+              )}
+              <table>
+                <tr>
+                  <th>{info.hinnat.alennus.rooli}</th>
+                  <th>{info.hinnat.alennus.hinta}</th>
+                </tr>
+                <tr>
+                  <th>{info.hinnat.perus.rooli}</th>
+                  <th>{info.hinnat.perus.hinta}</th>
+                </tr>
+                <tr>
+                  <th>{info.hinnat.kannatus.rooli}</th>
+                  <th>{info.hinnat.kannatus.hinta}</th>
+                </tr>
+              </table>
+            </div>
+            <div className="image-column">
+              <img src={hat} alt="velhohattu" />
+            </div>
           </div>
-        </div>
-        <p className="instruction-paragraph">{info.ryhmalippuohjeet}</p>
-        {/*
+          <TicketsButton language={language} />
+          <p className="instruction-paragraph">{info.lippuohjeet}</p>
+          <div className="content-row">
+            <div className="image-column">
+              <img className="wand-image" src={wand} alt="taikasauva" />
+            </div>
+            <div className="content-column">
+              {language === "fi" && (
+                <DecoratedHeader
+                  firstLetter={rKirjain}
+                  headerText={info.otsikkoRyhmaliput}
+                />
+              )}
+              {language === "en" && (
+                <DecoratedHeader
+                  firstLetter={gKirjain}
+                  headerText={info.otsikkoRyhmaliput}
+                />
+              )}
+              <table>
+                <tr>
+                  <th>{info.ryhmalippuhinnat.alennus.rooli}</th>
+                  <th>{info.ryhmalippuhinnat.alennus.hinta}</th>
+                </tr>
+                <tr>
+                  <th>{info.ryhmalippuhinnat.perus.rooli}</th>
+                  <th>{info.ryhmalippuhinnat.perus.hinta}</th>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <p className="instruction-paragraph">{info.ryhmalippuohjeet}</p>
+          {/*
             {language === "fi" && (
               <DecoratedHeader
                 firstLetter={hKirjain}
@@ -200,44 +203,54 @@ const App = () => {
             />
             <a href="https://youtube.com">Youtube</a>
             */}
-        <div className="follow">
-          <div className="content-row">
-            <div className="content-column">
-              <img
-                className="speksi-logo"
-                src={speksi}
-                alt="Kumpulan Speksi logo"
-              />
-            </div>
-            <div className="content-column">
-              <h2>{info.seuraaOtsikko}</h2>
-              <a href="https://www.instagram.com/kumpulanspeksi/">
-                Instagram: @kumpulanspeksi
-              </a>
-              <a href="https://www.tiktok.com/@kumpulanspeksi">
-                TikTok: @kumpulanspeksi
-              </a>
-              <a href="https://kumpulanspeksi.fi/jarjesto/">
-                {info.nettisivut}
-              </a>
-              <p>{info.lisatiedot}</p>
+          <div className="follow">
+            <div className="content-row">
+              <div className="content-column">
+                <img
+                  className="speksi-logo"
+                  src={speksi}
+                  alt="Kumpulan Speksi logo"
+                />
+              </div>
+              <div className="content-column">
+                <h2>{info.seuraaOtsikko}</h2>
+                <a href="https://www.instagram.com/kumpulanspeksi/">
+                  Instagram: @kumpulanspeksi
+                </a>
+                <a href="https://www.tiktok.com/@kumpulanspeksi">
+                  TikTok: @kumpulanspeksi
+                </a>
+                <a href="https://kumpulanspeksi.fi/jarjesto/">
+                  {info.nettisivut}
+                </a>
+                <p>{info.lisatiedot}</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="logo-row">
-          <img className="logo-image" src={tek} alt="TEK logo" />
-          <img className="logo-image" src={loimu} alt="Loimu logo" />
-          <img className="logo-image" src={unisport} alt="Unisport logo" />
-          <img className="logo-image" src={punanaamio} alt="Punanaamio logo" />
-          <img
-            className="logo-image"
-            src={nuta}
-            alt="Arabian nuorisotalo logo"
-          />
+          <div className="logo-row">
+            <img className="logo-image" src={tek} alt="TEK logo" />
+            <img className="logo-image" src={loimu} alt="Loimu logo" />
+            <img className="logo-image" src={unisport} alt="Unisport logo" />
+            <img className="logo-image" src={punanaamio} alt="Punanaamio logo" />
+            <img
+              className="logo-image"
+              src={nuta}
+              alt="Arabian nuorisotalo logo"
+            />
+          </div>
+          <div className="game-info">
+            <p>Haluatko kokeilla, mikä hahmo olisit? Tai selvittää magialajisi?</p>
+            <button onClick={() => setPage('games')}>Pelisivulle</button>
+          </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  };
+  if (page === 'games') {
+    return (
+      <GamePage />
+    )
+  }
 };
 
 export default App;
