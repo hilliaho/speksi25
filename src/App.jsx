@@ -24,6 +24,7 @@ import loimu from "./assets/loimu.png";
 import punanaamio from "./assets/punanaamio.png";
 import tek from "./assets/tek.png";
 import nuta from "./assets/nuta.jpg";
+import limes from "./assets/limes.png";
 import speksi from "./assets/kumpulanspeksi_logo.png";
 
 const App = () => {
@@ -204,11 +205,13 @@ const App = () => {
         <div className="follow">
           <div className="content-row">
             <div className="content-column">
-              <img
-                className="speksi-logo"
-                src={speksi}
-                alt="Kumpulan Speksi logo"
-              />
+              <a href="https://kumpulanspeksi.fi/jarjesto/">
+                <img
+                  className="speksi-logo"
+                  src={speksi}
+                  alt="Kumpulan Speksi logo"
+                />
+              </a>
             </div>
             <div className="content-column">
               <h2>{info.seuraaOtsikko}</h2>
@@ -228,6 +231,7 @@ const App = () => {
         <div className="logo-row">
           <img className="logo-image" src={tek} alt="TEK logo" />
           <img className="logo-image" src={loimu} alt="Loimu logo" />
+          <img className="logo-image" src={limes} alt="Limes logo" />
           <img className="logo-image" src={unisport} alt="Unisport logo" />
           <img className="logo-image" src={punanaamio} alt="Punanaamio logo" />
           <img
