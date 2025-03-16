@@ -196,12 +196,23 @@ const App = () => {
             )}
             <p>{info.kuvat}</p>
             <p>{info.editointi}</p>
-            <DecoratedHeader
-              firstLetter={tKirjain}
-              headerText={info.otsikkoTraileri}
-            />
-            <a href="https://youtube.com">Youtube</a>
             */}
+        <div className="trailer-container">
+          <DecoratedHeader
+            firstLetter={tKirjain}
+            headerText={info.otsikkoTraileri}
+          />
+          <div className="trailer">
+            <iframe
+              src="https://www.youtube.com/embed/74Sy5ktUnuQ?si=lONEIPW82IbqieCx"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
         <div className="follow">
           <div className="content-row">
             <div className="content-column">
