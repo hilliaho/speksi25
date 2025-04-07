@@ -275,6 +275,29 @@ p {
   font-weight: bold;
 }
 
+.tek-info {
+  margin-bottom: 16rem;
+}
+
+.tek-info p {
+  font-size: 1.2rem;
+}
+
+.tek-info span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.tek-info a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.tek-info a:hover {
+  color: #23b9ce;
+}
+
 /* Kuvat */
 
 .header-image {
