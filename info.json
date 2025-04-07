@@ -51,18 +51,26 @@
 				"hinta": "18€"
 			}
 		},
-		"ryhmalippuohjeet": "Ryhmälippuja voi ostaa vähintään 10 hengen ryhmälle. Ilmoita meille sähköpostitse (kumpulanspeksiliput@gmail.com), montako henkeä excursiolle osallistuu ja näytöspäivämäärä, niin varaamme teille tarvittavan määrän lippuja/paikkoja salista. Ryhmälippujen myynti päättyy 23.3.",
+		"ryhmalippuohjeet": "Ryhmälippuja voi ostaa vähintään 10 hengen ryhmälle. Ilmoita meille sähköpostitse (kumpulanspeksiliput@gmail.com), montako henkeä excursiolle osallistuu ja näytöspäivämäärä, niin varaamme teille tarvittavan määrän lippuja/paikkoja salista. Ryhmälippujen myynti päättyy 23.3. HUOM. Ryhmälippujen myyntiaikaa on jatkettu: Voit ostaa ryhmälippuja 30.3. klo 23:59 saakka.",
 		"otsikkoHahmot": "Hahmot",
 		"kuvat": "Kuvat: Teemu Lahjalahti",
 		"editointi": "Editointi: Teemu Laajalahti",
 		"otsikkoTraileri": "Traileri",
 		"lisatiedot": "Lisätiedot: kumpulanspeksi@gmail.com",
 		"seuraaOtsikko": "SEURAA MEITÄ",
-		"nettisivut": "Kumpulan Speksin nettisivut"
+		"nettisivut": "Kumpulan Speksin nettisivut",
+		"tekTeksti": [
+			"TEK on diplomi-insinöörien, arkkitehtien ja vastaavan tekniikan tai luonnontieteen yliopistokoulutuksen saaneiden etu- ja palvelujärjestö.",
+			"Noin 80 000 jäsenellään TEK on yksi Akavan ja Suomen suurimmista ammattijärjestöistä. Jäsenistä runsaat 20 000 on teekkareita ja matemaattis-luonnontieteellisten alojen opiskelijoita.",
+			"Olemme jäsentemme asiantuntijakumppani työelämässä. Tarjoamme jäsenillemme ammattijärjestökentän parhaat ammattiuraa tukevat palvelut.",
+			"Lisätietoa ",
+			"TEKin nettisivuilta"
+		],
+		"tekLinkki": "https://www.tek.fi/fi"
 	},
 	"en": {
 		"produktionimi": "I am Tree",
-		"kielitieto": "The performance is in Finnish.",
+		"kielitieto": "The performances are in Finnish, but we will provide a link to the translated script for anyone who doesn't understand Finnish. The script has a dark background, a light font, and can be viewed in the auditorium during the play with your own phone.",
 		"ostaLiput": "Purchase tickets",
 		"synopsis": [
 			"The Wizard Tower goes into a frenzy when the new intern's aunt is suddenly transformed into a bunny. Trust in the Dome that has protected Dometown for thousands of years is shaken when rumors of Outsiders reaches the wizards.",
@@ -112,13 +120,21 @@
 				"hinta": "18€"
 			}
 		},
-		"ryhmalippuohjeet": "Group tickets can be purchased for a minimum of 10 participants.  Contact us via email (kumpulanspeksiliput@gmail.com) and include how many tickets you wish to purchase and for which day. We will reserve the correct number of tickets and seats. Group ticket sales end on 23.3.",
+		"ryhmalippuohjeet": "Group tickets can be purchased for a minimum of 10 participants.  Contact us via email (kumpulanspeksiliput@gmail.com) and include how many tickets you wish to purchase and for which day. We will reserve the correct number of tickets and seats. Group ticket sales end on 30.3.",
 		"otsikkoHahmot": "Cast",
 		"kuvat": "Photography: Teemu Lahjalahti",
 		"editointi": "Editing: Teemu Laajalahti",
 		"otsikkoTraileri": "Trailer",
 		"lisatiedot": "Contact: kumpulanspeksi@gmail.com",
 		"seuraaOtsikko": "FOLLOW US",
-		"nettisivut": "Kumpulan Speksi's website"
+		"nettisivut": "Kumpulan Speksi's website",
+		"tekTeksti": [
+			"TEK is a trade union for academic engineers and architects in Finland.",
+			"In Finland, trade unions work closely with the employers’ organisations to ensure that the Finnish market is open, fair and competitive. On a personal level, this means that we negotiate the framework for employment conditions and salaries on your behalf, to make sure you have fair working conditions.",
+			"We are a professional organisation that supports you in your career. By becoming a member, you will have access to our experts, who can advise you on any issues regarding your work life in Finland. Through our services, we will help you make informed choices in all aspects of your career, from how to get your foot in the market to navigating Finnish work life.",
+			"Get to know our services in ",
+			"TEK's website"
+		],
+		"tekLinkki": "https://www.tek.fi/en"
 	}
 }
