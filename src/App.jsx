@@ -251,6 +251,13 @@ const App = () => {
             alt="Arabian nuorisotalo logo"
           />
         </div>
+        <div className="tek-info">
+          <p>{info.tekTeksti[0]}</p>
+          <p>{info.tekTeksti[1]}</p>
+          <p>{info.tekTeksti[2]}</p>
+          <span>{info.tekTeksti[3]}</span>
+          <a href={info.tekLinkki}>{info.tekTeksti[4]}</a>
+        </div>
       </div>
     </div>
   );
